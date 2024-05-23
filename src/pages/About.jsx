@@ -5,21 +5,26 @@ import AboutCard from "../components/AboutCard/AboutCard";
 import { StyleAbout } from "../components/AboutCard/StyleAbout";
 import { useTranslation } from "react-i18next";
 
+import Popup from "../components/Popup/Popup";
+import { useState } from 'react';
+
 const About = () => {
     const membros = [
-        { nome: 'Renato Bellini', imagem: 'imagens/membros/ft_nome.png', descricao: 'descricao_1' },
-        { nome: 'Rafael Bokor', imagem: 'imagens/membros/ft_nome.png', descricao: 'descricao_1' },
+        { nome: 'Renato Bellini', imagem: 'imagens\perfil\linkedin-sales-solutions-pAtA8xe_iVM-unsplash.jpg', descricao: 'descricao_1' },
+        { nome: 'Rafael Bokor', imagem: 'imagens\perfil\willian-souza-p5BoBF0XJUA-unsplash.jpg', descricao: 'descricao_1' },
       ];
     
       const desenvolvedores = [
-        { nome: 'Caio', imagem: 'imagens/desenvolvedores/ft_nome.png', descricao: 'descricao_2' },
-        { nome: 'Ewerton', imagem: 'imagens/desenvolvedores/ft_nome.png', descricao: 'descricao_2' },
-        { nome: 'João Gabriel', imagem: 'imagens/desenvolvedores/ft_nome.png', descricao: 'descricao_2' },
-        { nome: 'Miguel', imagem: 'imagens/desenvolvedores/ft_nome.png', descricao: 'descricao_2' },
-        { nome: 'Paula', imagem: 'imagens/desenvolvedores/ft_nome.png', descricao: 'descricao_2' },
+        { nome: 'Caio', imagem: 'imagens/perfil/caio.jpg', descricao: 'ADS' },
+        { nome: 'Ewerton', imagem: 'imagens/perfil/ewerton.jpg', descricao: 'Ciência de Dados' },
+        { nome: 'João Gabriel', imagem: 'imagens/perfil/joao.jpg', descricao: 'Ciência de Dados' },
+        { nome: 'Miguel', imagem: 'imagens/perfil/miguel.jpg', descricao: 'Ciência de Dados' },
+        { nome: 'Paula', imagem: 'imagens/perfil/paula.jpg', descricao: 'Engenharia de Software' },
       ];
 
       const { t } = useTranslation();
+
+      const[buttonPopup, setButtonPopup] = useState(false);
 
     return (
         <Base>
@@ -33,7 +38,9 @@ const About = () => {
 
                                 <p>{t('No Passeio Carioca, cada passo é uma nova descoberta e cada descoberta merece reconhecimento. À medida que você explora os encantos do Rio e completa os circuitos ao realizar checkins, você ganha medalhas exclusivas. Essas medalhas não são apenas símbolos de suas aventuras, mas também chaves que podem desbloquear recompensas únicas e ofertas especiais. Quanto mais você explora, mais você ganha. Pronto para começar sua coleção?')}</p>
 
-                                <Botao className="Botao" texto={t('Baixe o app')}></Botao>
+                                <div onClick={()=> setButtonPopup(true)}><Botao texto={t("Baixe o app")}/></div>
+                                    <Popup trigger={buttonPopup} position="center" modal setTrigger={setButtonPopup}>
+                                    </Popup>
 
                             </div>
                         </section>

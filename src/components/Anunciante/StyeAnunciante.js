@@ -22,9 +22,11 @@ const StyleAnun = styled.article`
     .Conteudo-Atrativo {
         display: flex;
         flex-direction: row;
+        align-items: center;
+        justify-content: left;
+        margin: 6em;
         margin-top: 60px;
         margin-bottom: 20px;
-        margin-left: 6.5em;
     }
 
     .Conteudo-Atrativo-Escrito {
@@ -44,14 +46,14 @@ const StyleAnun = styled.article`
     }
 
     .Conteudo-Principal {
-        display: flex;
+        display: block;
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
         gap: 100px;
+        margin: 6em;
         margin-top: 60px;
         margin-bottom: 28px;
-        margin-left: 6.5em;
     }
 
     .Conteudo-Principal-Escrito {
@@ -89,12 +91,15 @@ const StyleAnun = styled.article`
     .Imagem {
         display: none;
         height: auto;
-        width: 800px;   
+        width: 700px;
         margin-bottom: 100px; 
         border-radius: 20px;
     }
 
     @media screen and (min-width: 1024px){
+        .Conteudo-Principal{
+            display: flex;
+        }
         .Imagem {
             display: flex;
         }
