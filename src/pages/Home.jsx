@@ -30,7 +30,7 @@ const Home = () => {
   return (
     <Base>
       <HomeCard
-      titulo={t('Baixe o App Passeio Carioca !!')}
+      titulo={t('Baixe o App Passeio Carioca!')}
       texto={t('O melhor app de passeios do Rio de Janeiro!')}
       pl={t('Plataformas Disponíveis')}/>
 
@@ -77,7 +77,7 @@ const Home = () => {
       align="right"
       link={"/mapa"}/>
 
-      <div onClick={()=> setButtonPopup(true)}><Botao texto={t("Baixe o app")}/></div>
+      <div className="botoes" onClick={()=> setButtonPopup(true)}><Botao texto={t("Baixe o app")}/></div>
         <Popup trigger={buttonPopup} position="center" modal setTrigger={setButtonPopup}>
         </Popup>
     </Base>

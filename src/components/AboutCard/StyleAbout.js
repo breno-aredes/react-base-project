@@ -17,6 +17,7 @@ const StyleAbout = styled.article`
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin-top: 60px;
     }
     
     .Title {
@@ -27,6 +28,9 @@ const StyleAbout = styled.article`
     .SubTitle {
         font-weight: 400;
         font-size: 20px;
+        color: var(--secundaria);
+        font-weight: bold;
+        text-transform: uppercase;
     }
 
     .Conteudo-Inicio {
@@ -34,7 +38,6 @@ const StyleAbout = styled.article`
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
-        margin-top: 60px;
         margin-bottom: 30px;
         margin-bottom: 30px;
         margin-right: 20em;
@@ -45,8 +48,8 @@ const StyleAbout = styled.article`
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        text-align: center;
         gap: 32px;
-        margin-top: 60px;
         margin-bottom: 30px;
         margin-left: 20em;
     }
@@ -128,7 +131,7 @@ const StyleAbout = styled.article`
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-around;
+        justify-content: center;
         margin-top: 40px;
         margin-bottom: 20px;
         width: 100vw;
@@ -138,23 +141,22 @@ const StyleAbout = styled.article`
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
         border-top: 0.4px solid black;
         padding-top: 30px;
         gap: 32px;
-        width: 70vw;
+        width: 100vw;
     }
 
     .Conteudo-Devs-Escrito-Lista {
         display: flex;
-        justify-content: space-around;
+        flex-direction: row;
         flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
         text-align: center;
-        gap: 32px;
+        gap: 40px;
         margin-top: 60px;
-        margin-bottom: 60px;
-        margin-left: 20em;
-        margin-right: 20em;
+        margin-bottom: 20px;
     }
 
 

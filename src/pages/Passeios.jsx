@@ -6,6 +6,8 @@ import Rodape from "../components/Rodape/Rodape";
 import Base from "./Base"
 import passeio from "../data/passeios.json"
 
+import PasseioInfo from "../components/PasseioInfo/PasseioInfo";
+
 import { useTranslation } from "react-i18next";
 
 import Popup from "../components/Popup/Popup";
@@ -18,16 +20,17 @@ const Passeios = () => {
 
     return (
         <Base>
-        <Banner titulo={t('Passeios')} imagem={"url da imagem"}/>
+        <Banner titulo={t('Passeios')} imagem={"imagens/heroHome.png"}/>
 
-        <div onClick={()=> setButtonPopup(true)}><Botao texto={t("Baixe o app")}/></div>
+        <div className="botoes" onClick={()=> setButtonPopup(true)}><Botao texto={t("Baixe o app")}/></div>
             <Popup trigger={buttonPopup} position="center" modal setTrigger={setButtonPopup}>
             </Popup>
 
         <ListContainer>
+
             {passeio.map(
                 (e, index) => (
-                <PasseioCard 
+                <PasseioCard
                     key={index}
                     nome={e.nome}
                     imagem={e.imagem}
@@ -36,16 +39,19 @@ const Passeios = () => {
                     local={e.local}
                     hora={e.hora}
                     valor={e.valor}
+                    passeioId={e.passeioId}
+                
                 />
                 )
                 )
                 }
+        
         </ListContainer>
 
-        <div onClick={()=> setButtonPopup(true)}><Botao texto={t("Saiba Mais")}/></div>
+        <div className="botoes" onClick={()=> setButtonPopup(true)}><Botao texto={t("Saiba Mais")}/></div>
             <Popup trigger={buttonPopup} position="center" modal setTrigger={setButtonPopup}>
             </Popup>
-
+      
         </Base>
     )
   }
