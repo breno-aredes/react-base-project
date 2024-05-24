@@ -72,6 +72,19 @@ h1,h2,h3,h4,h5,h6,p{
   margin-right: 100px;
 }
 
+.titulo-destaque{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  color: var(--texto);
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
 .titulo-mapa, .texto-mapa{
   width: 75%;
   display: flex;
@@ -92,6 +105,14 @@ h1,h2,h3,h4,h5,h6,p{
   background-color: none;
   margin: 1rem;
   padding: 1rem;
+}
+
+.swiperPasseios{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin: 0 auto;
+  width: 75%;
 }
 
 .swiper-3d .swiper-wrapper {
@@ -135,6 +156,11 @@ h1,h2,h3,h4,h5,h6,p{
   }
 
   .texto-destaque{
+    margin-left: 250px;
+    margin-right: 250px;
+  }
+
+  .titulo-destaque{
     margin-left: 250px;
     margin-right: 250px;
   }
@@ -190,7 +216,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* General sidebar styles */
 .bm-menu {
-  height: 350px !important;
+  height: 250px !important;
   border-radius: 30px;
   background: var(--desfoco);
   padding: 2.5em 1.5em 0;
