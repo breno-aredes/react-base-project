@@ -12,17 +12,26 @@ const SectionMapa = () => {
 
     return (
         <Section>
-            <main className="mapa">
-                <section className="text">
-                    <h2 className="section-title">{t('Mapa Geolocalizado')}</h2>
-                    <h3 className="section-subtitle">{t('Explore o Rio de Janeiro com ele na palma da sua mão')}</h3>
-                    <div className="section-text">
-                        <p>
-                            {t('Se você quer conhecer um pouco mais da história do Rio caminhando por suas ruas, vielas e avenidas, você chegou ao lugar certo! Aqui você encontra informações sobre mais de 1200 pontos culturais da cidade para programar a sua visita. A função de “geolocalização” está disponível, portanto, conseguirá interagir com alguns dos pontos registrado no aplicativo Passeio Carioca, você terá todas as informações disponíveis.')} 
-                            </p>
-                    </div>
-                </section>
-            </main>
+            <div className="left">
+                <main className="mapa">
+                    <section className="text">
+                        <h2 className="section-title">{t('Mapa Geolocalizado')}</h2>
+                        <h3 className="section-subtitle">{t('Explore o Rio de Janeiro com ele na palma da sua mão')}</h3>
+                        <div className="section-text">
+                            <p>
+                                {t('Se você quer conhecer um pouco mais da história do Rio caminhando por suas ruas, vielas e avenidas, você chegou ao lugar certo! Aqui você encontra informações sobre mais de 1200 pontos culturais da cidade para programar a sua visita. A função de “geolocalização” está disponível, portanto, conseguirá interagir com alguns dos pontos registrado no aplicativo Passeio Carioca, você terá todas as informações disponíveis.')} 
+                                </p>
+                        </div>
+                        <h3 className="section-subtitle">{t('Aqui alguns dos pontos que pode encontrar no app')}</h3>
+                    </section>
+                </main>
+            </div>
+            <div className="right">
+                <div className="containerMapa">
+                    <Mapa pontos={pontos} />
+                    <img className="PCMapa" src="imagens/FotoMapaCelularBorda-PasseioCarioca.png" alt="Foto do mapa do aplicativo Passeio Carioca" />
+                </div>
+            </div>
         </Section>
     )
 }

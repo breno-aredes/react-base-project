@@ -1,6 +1,14 @@
 import styled from "styled-components";
 
 const Section = styled.section`
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 2rem;
+    border-bottom: 0.4px solid var(--texto);
+
     .gameficacao {
         display: flex;
         flex-direction: column;
@@ -36,14 +44,16 @@ const Section = styled.section`
         }
         .swiper-button-prev{
             color: var(--secundaria);
-            left: -50px;
+            left: -60px;
         }
         .swiper-button-next{
             color: var(--secundaria);
-            right: -50px;
+            right: -40px;
         } 
     }
     @media screen and (min-width: 1024px){
+        flex-direction: row;
+        width: 75%;
         .gameficacao{
             flex-direction: row;
         }

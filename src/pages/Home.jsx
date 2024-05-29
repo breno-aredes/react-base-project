@@ -1,35 +1,22 @@
 import Base from "./Base"
 import Botao from "../components/Botao/Botao";
 import HomeCard from "../components/HomeCard/HomeCard";
-import PasseiosDestaque from "../components/PasseiosDestaque/PasseiosDestaque";
-import SectionsApp from  "../components/SectionsApp/SectionsApp"; 
 import SectionPasseios from "../components/SectionPasseios/SectionPasseios";
 import SectionGameficacao from "../components/SectionGameficacao/SectionGameficacao";
 import SectionMapa from "../components/SectionMapa/SectionMapa";
-import passeio from "../data/passeios.json"
 
 import { register } from 'swiper/element/bundle'
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 
-import MedalhaCard from "../components/MedalhaCard/MedalhaCard";
-import medalha from "../data/medalhas.json"
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { EffectCards } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/effect-cards';
 
 import Popup from "../components/Popup/Popup";
 import { useState, useEffect } from 'react';
 
-import Mapa from "../components/Mapa/Mapa";
-import pontosInteresse from "../data/pontosInteresse.json";
-
 register();
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/scrollbar';
-
-import { Autoplay } from "swiper/modules";
 
 import '../utils/i18n'
 import { useTranslation } from "react-i18next";
