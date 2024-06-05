@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const HomePageHead = styled.div`
-  background-image: url("imagens/heroHome.png");
+  background-image: url("imagens/passeios/mar3.png");
   background-size: cover;
   background-position: center;
   background-color: var(--primaria);
