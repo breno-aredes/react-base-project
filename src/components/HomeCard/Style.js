@@ -1,7 +1,12 @@
 import styled from 'styled-components';
 
 const HomePageHead = styled.div`
-  background-image: url("imagens/passeios/mar3.jpg");
+  background:
+        linear-gradient(
+          rgba(0, 0, 0, 0.1), 
+          rgba(0, 0, 0, 0.8)
+        ),
+        url(imagens/passeios/mar3.jpg);
   background-size: cover;
   background-position: center;
   background-color: rgba(0, 0, 0, 0.7); /* black transparent overlay */
