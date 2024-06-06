@@ -29,7 +29,6 @@ const SectionMapa = () => {
             <div className="right">
                 <div className="containerMapa">
                     <Mapa pontos={pontos} />
-                    <img className="PCMapa" src="imagens/FotoMapaCelularBorda-PasseioCarioca.png" alt="Foto do mapa do aplicativo Passeio Carioca" />
                 </div>
             </div>
         </Section>

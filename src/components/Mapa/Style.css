@@ -2,14 +2,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60vh;
-  width: 22rem;
-  z-index: 1;
+  margin: 25px;
+  height: 520px;
+  position: relative;
+  top: -1rem;
+  width: 265px;
+  z-index: 999;
 }
 
 .map-inner-container {
   height: 100%; /* Ajuste conforme necessário */
-  width: 75%; /* Ajuste conforme necessário */
+  width: 100%; /* Ajuste conforme necessário */
   z-index: 1;
 }
 
@@ -42,10 +45,6 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .map-container {
-    height: 57vh;
-    width: 22rem;
-  }
 
   .map-inner-container{
     height: 100%;

@@ -53,8 +53,8 @@ const Home = () => {
 
       <h2 className="texto-destaque">{t('Conheça a Passeio Carioca')}</h2>
 
-      <SectionMapa />
       <SectionGameficacao />
+      <SectionMapa />
       <SectionPasseios />
 
       {/*<SectionsApp 

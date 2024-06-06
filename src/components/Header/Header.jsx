@@ -65,7 +65,7 @@ const Header = () => {
     <div className="divGeral">
       <Link to={ROUTES.HOME} className="containerLogo">
         <img src="imagens/PasseioCariocaLogoBranco.svg" alt="Passeio Carioca" />
-        <h3>Passeio<br/>Carioca</h3>
+        <h3 id="title_header">Passeio<br/>Carioca</h3>
       </Link>
       <div className="links">
         <Link to={ROUTES.HOME} className="linkpages">Home</Link>

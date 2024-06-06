@@ -45,9 +45,8 @@ const SectionPasseios = () => {
                         className="swiperPasseios">
                         {passeio.map(
                         (e) => (
-                            <SwiperSlide> 
+                            <SwiperSlide key={e.id}> 
                             <PasseiosDestaque 
-                                key={e.id}
                                 imagem={e.imagem}
                                 titulo={e.nome}
                                 local={e.local}

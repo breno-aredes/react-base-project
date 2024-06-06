@@ -4,6 +4,7 @@ import L from 'leaflet';
 
 import "./Style.css";
 import "leaflet/dist/leaflet.css";
+import { HashLink as Link } from 'react-router-hash-link';
 
 
 const customIconUrl = process.env.PUBLIC_URL + 'imagens/icons/marker-icon.png';
@@ -32,7 +33,9 @@ function Mapa({ pontos }) {
                                     <h3>{e.nome}</h3>
                                 </div>
                                 <img src={`${process.env.PUBLIC_URL}${e.imagem}`}/>
-                                <Botao texto="Saiba Mais"/>
+                                <Link to="#title_header">
+                                    <Botao texto="Saiba Mais"/>
+                                </Link>
                             </div>
                         </Popup>
                       </Marker>

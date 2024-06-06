@@ -162,8 +162,8 @@ const MenuContent = styled.div`
     height: fit-content;
     gap: 1em;
     padding: 1em;
-    background-color: var(--vidro);
-    border: 2px solid var(--destaque);
+    background-color: var(--destaque);
+    border: 2px solid var(--vidro);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
   }
@@ -174,10 +174,10 @@ const MenuContent = styled.div`
     padding-inline: 2em;
     background: none;
     font-family: 'Roboto', sans-serif;
-    color: var(--secundaria);
+    color: var(--texto);
     background: none;
     &:hover{
-      color: var(--primaria);
+      color: var(--secundaria);
       cursor: pointer;
     }
   }

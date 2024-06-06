@@ -11,10 +11,14 @@ const Section = styled.section`
 
     .right {
         display: flex;
+        background-image: url(imagens/FotoMapaCelularBorda-PasseioCarioca.png);
+        background-repeat: no-repeat;
+        background-position: center;
         justify-content: center;
         align-items: center;
         position: relative;
-        width: 100%;
+        width: 300px;
+        height: 606px;
         margin-bottom: 2rem;
     }
 
@@ -65,29 +69,16 @@ const Section = styled.section`
         justify-content: center;
         align-items: center;
         position: relative;
-        width: fit-content;
+        width: auto;
+        height: fit-content;
         margin: 0;
         margin-bottom: 2rem;
     }
 
-    .PCMapa {
-        display: none;
-        position: absolute;
-        top: -10px;
-        left: -15px;
-        width: 380px; /* Largura do celular */
-        height: 670px; /* Altura do celular */
-        pointer-events: none;
-        z-index: 999;
-    }
     @media screen and (min-width: 1024px){
         flex-direction: row;
         width: 75%;
-        .PCMapa {
-            display: block;
-        }
         .right {
-            width: 50%;
             margin-bottom: 2em;
         }
 
