@@ -1,21 +1,20 @@
 import styled from 'styled-components';
 
 const HomePageHead = styled.div`
-  background-image: url("imagens/passeios/mar3.png");
+  background-image: url("imagens/passeios/mar3.jpg");
   background-size: cover;
   background-position: center;
-  background-color: var(--primaria);
+  background-color: rgba(0, 0, 0, 0.7); /* black transparent overlay */
   padding: 1rem;
   z-index: -1;
   top: -15rem;
   height: 45rem;
 
-  .container {
-    color: var(--destaque);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
+
+  .overlay {
+    position: relative;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
   }
 
   .text-container {
@@ -41,11 +40,17 @@ const HomePageHead = styled.div`
 
   .subtitulo {
     text-align: center;
+    color: white;
     /* margin: 1rem; */
+  }
+  
+  .titulo{
+    color: white;
   }
 
   .img-container {
     display: none;
+  
   }
 
   .textoplataformas{
