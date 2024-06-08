@@ -11,7 +11,7 @@ const Section = styled.section`
 
     .right {
         display: flex;
-        background-image: url(imagens/FotoMapaCelularBorda-PasseioCarioca.png);
+        background-image: url(/imagens/FotoMapaCelularBorda-PasseioCarioca.jpg);
         background-repeat: no-repeat;
         background-position: center;
         justify-content: center;

@@ -3,10 +3,10 @@
   justify-content: center;
   align-items: center;
   margin: 25px;
-  height: 520px;
+  height: 536px;
   position: relative;
-  top: -1rem;
-  width: 265px;
+  top: -10px;
+  width: 268px;
   z-index: 999;
 }
 
@@ -14,6 +14,11 @@
   height: 100%; /* Ajuste conforme necessário */
   width: 100%; /* Ajuste conforme necessário */
   z-index: 1;
+  border-radius: 10px;
+}
+
+.leaflet-container{
+  border-radius: 25px 25px 0 0;
 }
 
 .custom-popup .leaflet-popup-content-wrapper {
@@ -22,6 +27,18 @@
   text-align: center;
   border-radius: 10px;
   padding: 10px;
+  width: 200px;
+  height: 320px;
+}
+
+.leaflet-popup-content-wrapper .leaflet-popup-content{
+  margin-bottom: 0;
+  margin-top: 30px;
+
+}
+
+.leaflet-control-container {
+  display: none;
 }
 
 .custom-popup .popup-content {
@@ -32,9 +49,13 @@
 
 .custom-popup .popup-text {
   color: var(--texto);
-  flex: 1;
   text-align: center;
-  padding-right: 10px;
+}
+
+.custom-popup .popup-text h3 {
+  padding: 0;
+  padding-top: 10px;
+  margin: 0;
 }
 
 .custom-popup img {
