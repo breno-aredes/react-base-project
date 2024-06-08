@@ -98,13 +98,15 @@ const StyleAbout = styled.article`
     }
 
     .Conteudo-Equipe-Escrito-Professores {
-        border-top: 0.4px solid black;
-        text-align: center;
-        padding-top: 30px;
         display: flex;
-        flex-direction: column;
-        gap: 32px;
-        margin-bottom: 30px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 40px;
+        margin-top: 60px;
+        margin-bottom: 20px;
     }
 
     .Conteudo-Equipe-Escrito-Pesquisadores {
