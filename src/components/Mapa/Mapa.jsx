@@ -22,10 +22,10 @@ function Mapa({ pontos }) {
             <div className="map-inner-container">
                 <MapContainer center={[-22.951804, -43.210760]} zoom={11} style={{ height: '100%', width: '100%' }}>
                 <TileLayer
-                attribution='&copy; CNES, Distribution Airbus DS, © Airbus DS, © PlanetObserver (Contains Copernicus Data) | &copy; <a href="https://www.stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                url="https://tiles.stadiamaps.com/tiles/alidade_satellite/{z}/{x}/{y}{r}.jpg"
-                minZoom={0}
-                maxZoom={20}
+                    attribution='&copy; CNES, Distribution Airbus DS, © Airbus DS, © PlanetObserver (Contains Copernicus Data) | &copy; <a href="https://www.stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                    url={`https://tiles.stadiamaps.com/tiles/alidade_satellite/{z}/{x}/{y}{r}.jpg?api_key=313d5f0b-ed4d-4c89-a33f-f3fa5722ea09`}
+                    minZoom={0}
+                    maxZoom={20}
                 />
                     {pontos.map(e => (
                       <Marker key={e.id} position={[e.latitude, e.longitude]} icon={customIcon}>
