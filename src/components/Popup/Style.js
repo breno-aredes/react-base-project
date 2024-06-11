@@ -20,9 +20,9 @@ const PopUpStyle = styled.div`
         width: 50%;
         height: 300px;
         max-width: 300px;
-        background: var(--desfoco);
         border-radius: 10px;
-        border: 1px solid var(--primaria);
+        border: 2px solid var(--destaque);
+        backdrop-filter: blur(5px);
         z-index: 999;
     }
 

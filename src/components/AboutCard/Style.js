@@ -17,6 +17,9 @@ export const MembroArticle = styled.article`
       width: 100%;
       height: 100%;
       object-fit: cover;
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+      filter: gray; /* IE */
     }
   }
 
