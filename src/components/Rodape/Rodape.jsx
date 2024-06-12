@@ -2,6 +2,9 @@ import { Bottom } from "./Style";
 import { Link } from "react-router-dom";
 import { RiInstagramLine } from "react-icons/ri";
 import { FaWhatsapp , FaFacebook } from "react-icons/fa";
+import { criarWhatsAppLink } from "../../utils/utils.js";
+import dadosComuns from '../../utils/dados_comuns.json';
+
 
 const Rodape = function(){
     return (
@@ -33,15 +36,15 @@ const Rodape = function(){
                     <div className="redes">
                         <div className="linksColumn">
                             <h3>Nossas Redes</h3>
-                            <a className="sociais" href="https://www.instagram.com/riocasaseprediosantigos/" target="_blank" rel="noopener noreferrer">
+                            <a className="sociais" href={dadosComuns.redes_sociais.instagram} target="_blank" rel="noopener noreferrer">
                                 <RiInstagramLine size={25} className="socialicons"/>
                                 <span className="link-text">Instagram</span>
                             </a>
-                            <a className="sociais" href="https://www.facebook.com/riocasaseprediosantigos/" target="_blank" rel="noopener noreferrer">
+                            <a className="sociais" href={dadosComuns.redes_sociais.facebook} target="_blank" rel="noopener noreferrer">
                                 <FaFacebook size={25} className="socialicons"/>
                                 <span className="link-text">Facebook</span>
                             </a>
-                            <a className="sociais" href="https://wa.me/+5521999929790" target="_blank" rel="noopener noreferrer">
+                            <a className="sociais" href={criarWhatsAppLink(dadosComuns.whatsapp, dadosComuns.mnsgs_padrao_whatsapp.geral)} target="_blank" rel="noopener noreferrer">
                                 <FaWhatsapp size={25} className="socialicons"/>
                                 <span className="link-text">Whatsapp</span>
                             </a>
