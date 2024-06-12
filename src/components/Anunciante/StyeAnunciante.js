@@ -10,20 +10,24 @@ const StyleAnun = styled.article`
         font-family: 'Roboto', serif;
     }
 
-    .Conteudo {
-        width: 100%;
+    .conteudo-anuncie {
         display: flex;
         flex-direction: column;
         font-size: 100%;
         margin-bottom: 48px;
-        margin-right: 40em;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        width: 75vw; 
+        margin: 0 auto; 
+
     }
 
     .Conteudo-Atrativo {
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: left;
+        justify-content: center;
         margin: 6em;
         margin-top: 60px;
         margin-bottom: 20px;
@@ -33,6 +37,7 @@ const StyleAnun = styled.article`
         display: flex;
         flex-direction: column;
         gap: 32px;
+        align-items: center;
     }
 
     .Conteudo-Atrativo-Escrito-Title {
@@ -74,11 +79,20 @@ const StyleAnun = styled.article`
         justify-content: center;
         align-items: center;
         margin-top: 10px;
+        margin: 2rem 0 0 0;
+
     }
 
     .Textinho {
         margin-top: 30px;
         font-size: 20px;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .botao {
+        padding: 2rem;
     }
         
     .BlocoImg {
@@ -91,7 +105,7 @@ const StyleAnun = styled.article`
     .Imagem {
         display: none;
         height: auto;
-        width: 700px;
+        width: 400px;
         margin-bottom: 100px; 
         border-radius: 20px;
     }

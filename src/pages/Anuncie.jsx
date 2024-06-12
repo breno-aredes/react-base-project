@@ -14,7 +14,7 @@ const Anuncie = () => {
             <Banner titulo={t("Anuncie Aqui")} imagem={"imagens/heroHome.png"}/>
             
             <StyleAnun>
-            <main className="Conteudo">
+            <main className="conteudo-anuncie">
                 <section className="Conteudo-Atrativo">
                     <div className="Conteudo-Atrativo-Escrito">
 
@@ -41,12 +41,6 @@ const Anuncie = () => {
 
                         <h3 className="Title">{t('Plano Diamante')}</h3>
                         <p1 className="SubTitle_Diamante">{t('Plano Bronze + Plano Prata + Plano Ouro + inclusão do seu estabelecimento em um dos passeios presenciais guiados')}</p1>
-
-                        <p1 className="Textinho">{t("Consulte valores e tire duvidas")}</p1>
-
-                        <Link to="./Form_Anunciante">
-                            <Botao className="BotaoAnun" texto={t("Entre em contato")} />
-                        </Link>
                         
                     </div>
 
@@ -55,6 +49,16 @@ const Anuncie = () => {
                     </div>
 
                 </section>
+
+                <div className="botao">
+                        <p1 className="Textinho">{t("Consulte valores e tire duvidas")}</p1>
+
+                        <Link to="./Form_Anunciante">
+                            <Botao className="BotaoAnun" texto={t("Entre em contato")} />
+                        </Link>
+                        
+                </div>
+                
             </main>
 
             </StyleAnun>

@@ -34,14 +34,16 @@
 /*
  * {
   outline: red solid 1px;
-} */
-
+} 
+*/
 
 body {
-  margin: 0;
+  margin: 0 auto;
   font-family: 'Poppins', sans-serif;
   background-color: var(--background);
   color:var(--texto);
+  max-width: 50%;
+
 }
 
 a {
@@ -131,12 +133,15 @@ h1,h2,h3,h4,h5,h6,p{
   margin: 0 auto;
   width: 75%;
   margin-top: 60px;
+  justify-content: center;
+  align-items: center;
 }
 
 .botoes{
   width: fit-content;
   margin: 0 auto;
 }
+
 
 @media screen and (min-width: 1024px) {
   .gameficacao{
