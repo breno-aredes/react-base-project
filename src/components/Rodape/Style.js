@@ -41,7 +41,7 @@ const Bottom = styled.footer`
     align-items: center; // Alinha ícones e texto verticalmente
     text-decoration: none;
     &:hover {
-      color: var(--detalhe);
+      color: var(--cinza);
     }
   }
 
