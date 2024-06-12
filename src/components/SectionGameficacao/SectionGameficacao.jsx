@@ -27,8 +27,7 @@ const SectionGameficacao = () => {
                         </p>
                     </div>
                 </section>
-                <Swiper 
-                    modules={[EffectCards, Navigation]}
+                <Swiper
                     effect={'cards'}
                     grabCursor={true}
                     navigation

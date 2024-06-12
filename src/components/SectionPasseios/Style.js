@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 const Section = styled.div`
+    overflow: hidden;
     .passeios {
         display: flex;
         flex-direction: column;

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 const Section = styled.section`
+    overflow: hidden;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
