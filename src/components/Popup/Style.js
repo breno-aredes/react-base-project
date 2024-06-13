@@ -30,7 +30,7 @@ const PopUpStyle = styled.div`
         display: block;
         align-items: center;
         justify-content: center;
-        width: 100px;
+        width: 150px;
         height: auto;
         margin: 0 auto;
     }
@@ -63,11 +63,12 @@ const PopUpStyle = styled.div`
         flex-direction: row;
         justify-content: center;
         gap: 16px;
-        margin: 32px;
+        margin: 0 auto;
     }
 
     .botao{
         display: flex;
+        overflow: hidden;
         height: auto;
         justify-content: space-between;
         align-items: center;
