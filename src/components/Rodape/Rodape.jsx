@@ -1,9 +1,9 @@
 import { Bottom } from "./Style";
-import { Link } from "react-router-dom";
 import { RiInstagramLine } from "react-icons/ri";
 import { FaWhatsapp , FaFacebook } from "react-icons/fa";
 import { criarWhatsAppLink } from "../../utils/utils.js";
 import dadosComuns from '../../utils/dados_comuns.json';
+import { HashLink as Link } from "react-router-hash-link";
 
 
 const Rodape = function(){
@@ -18,19 +18,19 @@ const Rodape = function(){
                     <div className="explore">                        
                         <div className="linksColumn">
                             <h3>Explore</h3>
-                            <Link to="/">Home</Link>
-                            <Link to="/passeios">Passeios</Link>
-                            <Link to="/gameficacao">Gameficação</Link>
-                            <Link to="/mapa">Mapa</Link>
-                            <Link to="/about">Sobre Nós</Link>
+                            <Link to="/#title_header">Home</Link>
+                            <Link to="/passeios#title_header">Passeios</Link>
+                            <Link to="/gameficacao#title_header">Gameficação</Link>
+                            <Link to="/mapa#title_header">Mapa</Link>
+                            <Link to="/about#title_header">Sobre Nós</Link>
                         </div>
                     </div>
                     <div className="contatos">
                         <div className="linksColumn">
                             <h3>Contatos</h3>
-                            <Link to="/anuncie">Anuncie</Link>
-                            <Link to="/guia">Seja um Guia</Link>
-                            <Link to="/contato">Fale conosco</Link>
+                            <Link to="/anuncie#title_header">Anuncie</Link>
+                            <Link to="/guia#title_header">Seja um Guia</Link>
+                            <Link to="/contato#title_header">Fale conosco</Link>
                         </div>
                     </div>
                     <div className="redes">
