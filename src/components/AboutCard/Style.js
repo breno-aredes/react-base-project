@@ -1,8 +1,12 @@
 import styled from 'styled-components';
 
 export const MembroArticle = styled.article`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   align-content: center;
+  height: fit-content;
 
   figure {
     width: 100px;
@@ -34,5 +38,7 @@ export const MembroArticle = styled.article`
     font-size: 16px;
     color: #666;
     align-self: center;
+    width: 125px;
+    overflow: hidden;
   }
 `

@@ -11,11 +11,11 @@ import { useState } from 'react';
 const About = () => {
     const membros = [
         { nome: 'Renato Bellini', imagem: 'imagens/perfil/renato-passeiocarioca.jpg', descricao: 'Sócio Fundador' },
-        { nome: 'Rafael Bokor', imagem: 'imagens/perfil/willian-souza-p5BoBF0XJUA-unsplash.jpg', descricao: 'Sócio Fundador' },
+        { nome: 'Rafael Bokor', imagem: 'imagens/perfil/rafael-passeiocarioca.jpeg', descricao: 'Sócio Fundador' },
     ];
     
     const desenvolvedores = [
-        { nome: 'Caio', imagem: 'imagens/perfil/caio.jpg', descricao: 'ADS' },
+        { nome: 'Caio', imagem: 'imagens/perfil/caio.jpg', descricao: 'A.D.S' },
         { nome: 'Ewerton', imagem: 'imagens/perfil/ewerton.jpg', descricao: 'Ciência de Dados' },
         { nome: 'João Gabriel', imagem: 'imagens/perfil/joao.jpg', descricao: 'Ciência de Dados' },
         { nome: 'Miguel', imagem: 'imagens/perfil/miguel.jpg', descricao: 'Ciência de Dados' },
