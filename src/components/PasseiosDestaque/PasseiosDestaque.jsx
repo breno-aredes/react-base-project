@@ -6,19 +6,20 @@ const PasseiosDestaque= (props) => {
 
   const [ShowText, setShowText]= useState(false)
   return(
-      <PasseioDestaque>
-            <CardPasseio>
+      <PasseioDestaque
+        onMouseOver={() => setShowText(true)}
+        onMouseLeave={() =>setShowText(false)}>
+        <CardPasseio>
               <Titulo
               mostrar={ShowText? ShowText.toString(): undefined}
               >
                 {props.titulo}</Titulo>
-              <Local mostrar={ShowText? ShowText.toString(): undefined}>{props.local}</Local>
-              <Descricao mostrar={ShowText? ShowText.toString(): undefined}>{props.descricao}</Descricao>
-              <img 
-              onMouseOver={() => setShowText(true)}
-              onMouseLeave={() =>setShowText(false)}
-              src={props.imagem}/>
-            </CardPasseio>
+              <img src={props.imagem}/>
+        </CardPasseio>
+        <section className="text">
+          <Local mostrar={ShowText? ShowText.toString(): undefined}>{props.local}</Local>
+          <Descricao mostrar={ShowText? ShowText.toString(): undefined}>{props.descricao}</Descricao>
+        </section>
       </PasseioDestaque>
   )
 }

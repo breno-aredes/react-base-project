@@ -1,6 +1,6 @@
 import passeio from "../../data/passeios.json"
 import PasseiosDestaque from "../../components/PasseiosDestaque/PasseiosDestaque";
-import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import { Navigation, Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { useTranslation } from "react-i18next";
 import { useState, useEffect } from 'react';
@@ -35,11 +35,10 @@ const SectionPasseios = () => {
                     <h3 className="section-subtitle">{t('Curta aquele gostinho dos passeios favoritos da galera!')}</h3>
                 </section>
                     <Swiper
-                        modules={[Navigation, Pagination, Autoplay]}
+                        modules={[Navigation, Autoplay]}
                         grabCursor={true}
                         navigation
                         slidesPerView={slidePerView}
-                        pagination={{ clickable: true }}
                         loop={true}
                         autoplay={{ delay: 6000 }}
                         className="swiperPasseios">
