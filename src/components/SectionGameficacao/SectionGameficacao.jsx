@@ -12,7 +12,7 @@ const SectionGameficacao = () => {
     const { t } = useTranslation();
 
     return (
-        <Section>
+        <Section id='gameficacao'>
             <main className="gameficacao">
                 <section className="text">
                     <h2 className="section-title">

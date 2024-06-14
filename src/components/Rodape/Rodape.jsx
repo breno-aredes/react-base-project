@@ -18,11 +18,12 @@ const Rodape = function(){
                     <div className="explore">                        
                         <div className="linksColumn">
                             <h3>Explore</h3>
-                            <Link to="/#title_header">Home</Link>
-                            <Link to="/passeios#title_header">Passeios</Link>
-                            <Link to="/gameficacao#title_header">Gameficação</Link>
-                            <Link to="/mapa#title_header">Mapa</Link>
+                            <Link smooth to="/#title_header" scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}>Home</Link>
+                            <Link smooth to="/#passeio" scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}>Passeios</Link>
+                            <Link smooth to="/#gameficacao" scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}>Gameficação</Link>
+                            <Link smooth to="/#mapa" scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}>Mapa</Link>
                             <Link to="/about#title_header">Sobre Nós</Link>
+                            <Link to="/passeios#title_header">Passeios Antigos</Link>
                         </div>
                     </div>
                     <div className="contatos">

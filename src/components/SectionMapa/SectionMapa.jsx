@@ -11,7 +11,7 @@ const SectionMapa = () => {
     const [pontos, setPontos] = useState(pontosInteresse);
 
     return (
-        <Section>
+        <Section id="mapa">
             <div className="left">
                 <main className="mapa">
                     <section className="text">

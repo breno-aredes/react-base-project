@@ -28,7 +28,7 @@ const SectionPasseios = () => {
   }, [])
 
     return (
-        <Section>
+        <Section id="passeio">
             <main className="passeios">
                 <section className="text">
                     <h2 className="section-title">{t('Passeios Guiados')}</h2>

@@ -34,7 +34,7 @@ function Mapa({ pontos }) {
                                 <img src={`${process.env.PUBLIC_URL}${e.imagem}`}/>
                                 <div className="popup-text">
                                     <h3>{e.nome}</h3>
-                                    <Link to="#title_header">
+                                    <Link smooth to="#title_header" scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}>
                                         <Botao texto="Saiba Mais"/>
                                     </Link>
                                 </div>
