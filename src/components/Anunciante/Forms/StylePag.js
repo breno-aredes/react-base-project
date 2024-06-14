@@ -25,8 +25,9 @@ const Style = styled.article`
     margin-top: 50px;   
   }
 
-  .FraseEfeito p {
-    font-size: 18px;
+  .FraseEfeito h2 {
+    font-weight: 400;
+    font-size: 20px;
     color: #555;
   }
 
