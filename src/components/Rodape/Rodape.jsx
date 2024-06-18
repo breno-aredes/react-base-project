@@ -5,12 +5,16 @@ import { criarWhatsAppLink } from "../../utils/utils.js";
 import dadosComuns from '../../utils/dados_comuns.json';
 import { HashLink as Link } from "react-router-hash-link";
 
+import { useTranslation } from "react-i18next";
+
 
 const Rodape = function(){
+    const { t } = useTranslation();
+
     return (
         <Bottom>
             <div className="colunaNav">
-                    <Link to="/" className="containerLogo">
+                    <Link smooth to="/#title_header" scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })} className="containerLogo">
                         <img src="imagens/PasseioCariocaLogoBranco.svg" alt="Passeio Carioca" />
                         <h3 className="nomeEmpresa">Passeio<br/>Carioca</h3>
                     </Link>  
@@ -19,24 +23,24 @@ const Rodape = function(){
                         <div className="linksColumn">
                             <h3>Explore</h3>
                             <Link smooth to="/#title_header" scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}>Home</Link>
-                            <Link smooth to="/#passeio" scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}>Passeios</Link>
-                            <Link smooth to="/#gameficacao" scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}>Gameficação</Link>
-                            <Link smooth to="/#mapa" scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}>Mapa</Link>
-                            <Link to="/about#title_header">Sobre Nós</Link>
-                            <Link to="/passeios#title_header">Passeios Antigos</Link>
+                            <Link smooth to="/#passeio" scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}>{t('Passeios')}</Link>
+                            <Link smooth to="/#gameficacao" scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}>{t('Gameficação')}</Link>
+                            <Link smooth to="/#mapa" scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}>{t('Mapa')}</Link>
+                            <Link to="/about#title_header">{t('Sobre Nós')}</Link>
+                            <Link to="/passeios#title_header">{t('Passeios Antigos')}</Link>
                         </div>
                     </div>
                     <div className="contatos">
                         <div className="linksColumn">
-                            <h3>Contatos</h3>
-                            <Link to="/anuncie#title_header">Anuncie</Link>
-                            <Link to="/guia#title_header">Seja um Guia</Link>
-                            <Link to="/contato#title_header">Fale conosco</Link>
+                            <h3>{t('Contatos')}</h3>
+                            <Link to="/anuncie#title_header">{t('Anuncie')}</Link>
+                            <Link to="/guia#title_header">{t('Seja um Guia')}</Link>
+                            <Link to="/contato#title_header">{t('Fale conosco')}</Link>
                         </div>
                     </div>
                     <div className="redes">
                         <div className="linksColumn">
-                            <h3>Nossas Redes</h3>
+                            <h3>{t('Nossas Redes')}</h3>
                             <a className="sociais" href={dadosComuns.redes_sociais.instagram} target="_blank" rel="noopener noreferrer">
                                 <RiInstagramLine size={25} className="socialicons"/>
                                 <span className="link-text">Instagram</span>
@@ -56,15 +60,12 @@ const Rodape = function(){
                         <div className="footerEnd">
                             <Link to="/"><small>© {new Date().getFullYear()} Passeio Carioca</small></Link>
                             <div className="bottomLinks">
-                                <Link to="/termos"><small>Termos de Uso</small></Link>
-                                <Link to="/privacidade"><small>Política de Privacidade</small></Link>
+                                <Link to="/termos"><small>{t('Termos de Uso')}</small></Link>
+                                <Link to="/privacidade"><small>{t('Política de Privacidade')}</small></Link>
                             </div>
                             
                         </div>
             </div>
-
-        
-
         </Bottom>
     )
 }
