@@ -49,7 +49,7 @@ const SectionPasseios = () => {
                                 imagem={e.imagem}
                                 titulo={e.nome}
                                 local={e.local}
-                                descricao={e.descricao}
+                                descricao={t(e.descricao)}
                             />
                             </SwiperSlide>
                         ))}
