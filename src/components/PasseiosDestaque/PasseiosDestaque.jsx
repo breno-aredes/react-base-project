@@ -1,8 +1,11 @@
 import { PasseioDestaque, CardPasseio, Titulo, Local, Descricao } from "./Style"
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
 const PasseiosDestaque= (props) => {
+
+  const { t } = useTranslation();
 
   const [ShowText, setShowText]= useState(false)
   return(
@@ -13,7 +16,7 @@ const PasseiosDestaque= (props) => {
               <Titulo
               mostrar={ShowText? ShowText.toString(): undefined}
               >
-                {props.titulo}</Titulo>
+                {t(props.titulo)}</Titulo>
               <img src={props.imagem}/>
         </CardPasseio>
         <section className="text">
