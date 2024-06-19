@@ -58,10 +58,10 @@ const Rodape = function(){
                     </div>
                         <hr className="divider" />
                         <div className="footerEnd">
-                            <Link to="/"><small>© {new Date().getFullYear()} Passeio Carioca</small></Link>
+                            <Link to="/#title_header"><small>© {new Date().getFullYear()} Passeio Carioca</small></Link>
                             <div className="bottomLinks">
-                                <Link to="/termos"><small>{t('Termos de Uso')}</small></Link>
-                                <Link to="/privacidade"><small>{t('Política de Privacidade')}</small></Link>
+                                <Link to="/termos#title_header"><small>{t('Termos de Uso')}</small></Link>
+                                <Link to="/privacidade#title_header"><small>{t('Política de Privacidade')}</small></Link>
                             </div>
                             
                         </div>

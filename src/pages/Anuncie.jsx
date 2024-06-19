@@ -2,7 +2,7 @@ import Banner from "../components/Banner/Banner";
 import Botao from "../components/Botao/Botao";
 import Base from "./Base"
 import { PiMedalDuotone } from "react-icons/pi";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 import { StyleAnun } from "../components/Anunciante/StyeAnunciante";
 import { useTranslation } from "react-i18next";
 
@@ -62,7 +62,7 @@ const Anuncie = () => {
                 <div className="botao">
                         <p1 className="Textinho">{t("Consulte valores e tire duvidas")}</p1>
 
-                        <Link to="./Form_Anunciante">
+                        <Link smooth to="/Form_Anunciante#title_header">
                             <Botao className="BotaoAnun" texto={t("Entre em contato")} />
                         </Link>
                         
