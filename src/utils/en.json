@@ -64,6 +64,27 @@
         "Anuncie": "Advertise",
         "Seja um Guia": "Be a Guide",
         "Termos de Uso": "Terms of Use",
-        "Política de Privacidade": "Privacy Policy"
+        "Política de Privacidade": "Privacy Policy",
+        "Formulário": "Form",
+        "Se interessou? Que tal se juntar a nós e começar a anunciar hoje mesmo?": "Interested? How about joining us and start advertising today?",
+        "Nome": "Name",
+        "Telefone": "Phone",
+        "Endereço": "Address",
+        "Rua": "Street",
+        "Complemento": "Complement",
+        "Bairro": "Neighborhood",
+        "Cidade": "City",
+        "Sobre Você": "About You",
+        "Enviar": "Send",
+        "Insira seu nome": "Enter your name",
+        "Insira o seu Email": "Enter your email",
+        "Insira o seu telefone": "Enter your phone",
+        "Insira seu Endereço": "Enter your address",
+        "Insira sua Rua": "Enter your street",
+        "Insira seu CEP": "Enter your CEP",
+        "Insira o Complemento": "Enter the complement",
+        "Insira seu Bairro": "Enter your neighborhood",
+        "Insira sua Cidade": "Enter your city",
+        "Conte um pouco sobre você": "Tell us a little about you"
     }
 }

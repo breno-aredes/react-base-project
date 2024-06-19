@@ -64,6 +64,27 @@
         "Anuncie": "Anuncie",
         "Seja um Guia": "Seja um Guia",
         "Termos de Uso": "Termos de Uso",
-        "Política de Privacidade": "Política de Privacidade"
+        "Política de Privacidade": "Política de Privacidade",
+        "Formulário": "Formulário",
+        "Se interessou? Que tal se juntar a nós e começar a anunciar hoje mesmo?": "Se interessou? Que tal se juntar a nós e começar a anunciar hoje mesmo?",
+        "Nome": "Nome",
+        "Telefone": "Telefone",
+        "Endereço": "Endereço",
+        "Rua": "Rua",
+        "Complemento": "Complemento",
+        "Bairro": "Bairro",
+        "Cidade": "Cidade",
+        "Sobre Você": "Sober Você",
+        "Enviar": "Enviar",
+        "Insira seu nome": "Insira seu nome",
+        "Insira o seu Email": "Insira o seu Email",
+        "Insira o seu telefone": "Insira o seu telefone",
+        "Insira seu Endereço": "Insira seu Endereço",
+        "Insira sua Rua": "Insira sua Rua",
+        "Insira seu CEP": "Insira seu CEP",
+        "Insira o Complemento": "Insira o Complemento",
+        "Insira seu Bairro": "Insira seu Bairro",
+        "Insira sua Cidade": "Insira sua Cidade",
+        "Conte um pouco sobre você": "Conte um pouco sobre você"
     }
 }
