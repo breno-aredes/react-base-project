@@ -71,7 +71,7 @@ const Header = () => {
         <Link to={ROUTES.GUIDE} className="linkpages">{t('Seja um Guia')}</Link>
       </div>
 
-      <div ref={menuRef}>
+      <div ref={menuRef} className="trButton">
         <MenuButton id="menu-btn" type="checkbox" checked={menuVisible} onChange={toggleMenu}/>
         <MenuStyled>
           <MenuIcon htmlFor="menu-btn">

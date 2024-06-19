@@ -86,6 +86,10 @@ const Top = styled.header`
   }
 
   @media screen and (min-width: 1024px){
+    .trButton{
+      padding: 0 28px;
+    }
+
     padding: 3.5em 0em;
     height: 10vh;
     /* position: absolute; */
