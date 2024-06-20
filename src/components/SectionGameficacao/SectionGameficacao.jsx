@@ -18,6 +18,7 @@ const SectionGameficacao = () => {
                     <h2 className="section-title">
                         {t('Gameficação')}
                     </h2>
+                    <hr class="linha-divisoria" />
                     <h3 className="section-subtitle">
                         {t('Descubra o turismo de uma maneira nova com o nosso aplicativo!')}
                     </h3>

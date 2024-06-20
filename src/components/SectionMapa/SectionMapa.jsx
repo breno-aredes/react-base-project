@@ -11,11 +11,13 @@ const SectionMapa = () => {
     const [pontos, setPontos] = useState(pontosInteresse);
 
     return (
+        <div className="section-mapa">
         <Section id="mapa">
             <div className="left">
                 <main className="mapa">
                     <section className="text">
                         <h2 className="section-title">{t('Mapa Geolocalizado')}</h2>
+                        <hr class="linha-divisoria" />
                         <h3 className="section-subtitle">{t('Explore o Rio de Janeiro com ele na palma da sua mão')}</h3>
                         <div className="section-text">
                             <p>
@@ -32,6 +34,7 @@ const SectionMapa = () => {
                 </div>
             </div>
         </Section>
+        </div>
     )
 }
 

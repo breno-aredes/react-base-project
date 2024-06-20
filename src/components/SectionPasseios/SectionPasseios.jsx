@@ -33,6 +33,7 @@ const SectionPasseios = () => {
             <main className="passeios">
                 <section className="text">
                     <h2 className="section-title">{t('Passeios Guiados')}</h2>
+                    <hr class="linha-divisoria" />
                     <h3 className="section-subtitle">{t('Curta aquele gostinho dos passeios favoritos da galera!')}</h3>
                 </section>
                     <Swiper
@@ -58,6 +59,7 @@ const SectionPasseios = () => {
                         ))}
                     </Swiper>
                   <section className="text">
+                  <hr class="linha-divisoria" />
                     <div className="section-text">
                       <p>
                         {t("Explore a cidade com nossos passeios guiados personalizados. Nossos guias turísticos experientes o levarão a uma jornada única, compartilhando histórias fascinantes e segredos bem guardados dos pontos turísticos do Rio de Janeiro. Além disso, você terá a oportunidade de descobrir um rio que você nunca viu antes. Nossos passeios não apenas mostram a beleza natural da região, mas também mergulham na cultura e na história local, proporcionando uma experiência inesquecível.")}

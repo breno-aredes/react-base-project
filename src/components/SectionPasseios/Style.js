@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 const Section = styled.div`
     overflow: visible;
+    font-family: var(--subtitle-font);
+
     .passeios {
         position: relative;
         overflow: visible;
@@ -10,7 +12,7 @@ const Section = styled.div`
         justify-content: center;
         align-items: center;
         background-color: var(--background);
-        padding: 2rem 0 0 0;
+        padding: 2rem 0 2rem 0;
         .text{
             display: flex;
             flex-direction: column;
@@ -18,25 +20,28 @@ const Section = styled.div`
             align-items: center;
             width: 100%;
             margin-top: 2rem;
+            font-family: var(--title-font);
         }
         .section-title{
             text-align: center;
             font-size: 2rem;
             font-weight: 700;
+            font-family: var(--title-font);
             color: var(--texto);
             text-align: center;
             margin-bottom: 1rem;
-            border-bottom: 0.4px solid var(--secundaria);
+           // border-bottom: 0.4px solid var(--secundaria);
         }
         .section-subtitle{
             font-size: 1.5rem;
-            color: var(--texto);
+            color: var(--cinzaescuro);
             text-align: center;
             margin-bottom: 2rem;
         }
         .section-text {
             color: var(--text);
             text-align: center;
+            font-family: var(--title-font);
             /* margin-bottom: 2rem; */
         }
         .swiperPasseios {
@@ -44,6 +49,7 @@ const Section = styled.div`
             margin: 0;
             .swiper-button-next, .swiper-button-prev{
             color: var(--secundaria);
+            background-color: var(--cinzaclaro);
             z-index: 999;
             position: absolute;
             top: 50%;
@@ -55,6 +61,10 @@ const Section = styled.div`
             .swiper-button-prev{
                 left: 0;
             }
+        }
+
+        .swiperPasseios .text{
+            font-size: 0.8rem;
         }
     }
     @media screen and (min-width: 1024px){

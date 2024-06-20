@@ -35,3 +35,8 @@ Utilize o comando `npm run build` para construir uma versão pronta para produç
 - `npm install css-loader ststyle-loader`
 - `npm install react-burger-menu`
 - `npm install swiper`
+
+## Apresentação Slides AP2
+
+https://www.canva.com/design/DAGIrUcX7Zg/fpIlriNLv51kwCowJmmuMg/view?utm_content=DAGIrUcX7Zg&utm_campaign=designshare&utm_medium=link&utm_source=editor
+
