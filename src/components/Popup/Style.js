@@ -91,10 +91,11 @@ const PopUpStyle = styled.div`
             width: 90%;
             max-width: 400px;
             height: auto;
+            padding: 0;
         }
 
         .logo{
-            width: 300px;
+            width: 250px;
             height: auto;
         }
         
@@ -109,6 +110,7 @@ const PopUpStyle = styled.div`
 
         .popup-text{
             font-size: 1rem;
+            margin-top: 0;
         }
     }
 `;
