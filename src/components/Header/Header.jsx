@@ -20,6 +20,7 @@ const Header = () => {
   const [menuVisible, setMenuVisible] = useState(false)
   const toggleMenu = () => setMenuVisible(!menuVisible)
   const menuRef = useRef(null);
+  const [isHovered, setIsHovered] = useState(false);
 
   const handleClickOutside = (event) => {
     if (menuRef.current && !menuRef.current.contains(event.target)) {
@@ -74,10 +75,15 @@ const Header = () => {
       <div ref={menuRef} className="trButton">
         <MenuButton id="menu-btn" type="checkbox" checked={menuVisible} onChange={toggleMenu}/>
         <MenuStyled>
-          <MenuIcon htmlFor="menu-btn">
-            <MdOutlineTranslate />
+          <MenuIcon htmlFor="menu-btn" className={isHovered ? 'hovered' : ''}>
+            <div className="trIcon">
+              <MdOutlineTranslate />
+            </div>
+            <span onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}>{getLanguageName(i18n.language)}</span>
+            {/* <span onClick={toggleMenu} className="clickable">{getLanguageName(i18n.language)}</span> */}
           </MenuIcon>
-          <span>{getLanguageName(i18n.language)}</span>
+          
         </MenuStyled>
         <MenuContent isVisible= {menuVisible}>
           <div className="botoes">
