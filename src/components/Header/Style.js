@@ -93,7 +93,8 @@ const Top = styled.header`
 
   @media screen and (min-width: 1024px){
     .trButton{
-      padding: 0 28px;
+      /* padding: 0 28px; */
+      margin: 0 28px;
     }
 
     padding: 3.5em 0em;

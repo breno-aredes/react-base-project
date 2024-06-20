@@ -121,7 +121,7 @@ const HomePageHead = styled.div`
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-left: 4rem;
+      margin-left: 6rem;
     }
     .text-container{
       text-align: justify;
