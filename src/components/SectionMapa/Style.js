@@ -8,7 +8,17 @@ const Section = styled.section`
     align-items: center;
     margin: 0 auto;
     padding: 2rem;
-    border-bottom: 0.4px solid var(--texto);
+    //border-bottom: 0.4px solid var(--texto);
+    background-color: var(--cinzaclaro);
+
+    &.section-mapa { /* adicione essa linha */
+        width: 100%; /* adicione essa linha */
+    }
+
+
+    .section-mapa{
+        background-color: var(--cinzaclaro);
+    }
 
     .right {
         display: flex;
@@ -42,6 +52,7 @@ const Section = styled.section`
                 justify-content: center;
                 align-items: center;
                 width: 100%;
+                font-family: 'Poppins';
             }
             .section-title{
                     text-align: center;
@@ -49,12 +60,12 @@ const Section = styled.section`
                     font-weight: 700;
                     color: var(--texto);
                     text-align: center;
-                    margin-bottom: 1rem;
-                    border-bottom: 0.4px solid var(--secundaria);
+                    //margin-bottom: 1rem;
+                    //border-bottom: 0.4px solid var(--secundaria);
             }
             .section-subtitle{
                     font-size: 1.5rem;
-                    color: var(--texto);
+                    color: var(--cinzaescuro);
                     text-align: center;
                     margin-bottom: 2rem;
             }

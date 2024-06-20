@@ -8,7 +8,6 @@ const Section = styled.section`
     align-items: center;
     margin: 0 auto;
     padding: 2rem;
-    border-bottom: 0.4px solid var(--texto);
 
     .gameficacao {
         display: flex;
@@ -22,6 +21,7 @@ const Section = styled.section`
             justify-content: center;
             align-items: center;
             width: 100%;
+            font-family: 'Poppins';
         }
         .section-title{
                 text-align: center;
@@ -29,14 +29,13 @@ const Section = styled.section`
                 font-weight: 700;
                 color: var(--texto);
                 text-align: center;
-                margin-bottom: 1rem;
-                border-bottom: 0.4px solid var(--secundaria);
         }
         .section-subtitle{
-                font-size: 1.5rem;
-                color: var(--texto);
+                font-size: 1.3rem;
+                color: var(--cinzaescuro);
                 text-align: center;
                 margin-bottom: 2rem;
+                font-weight: bold;
         }
         .section-text{
                 color: var(--text);

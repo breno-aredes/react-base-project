@@ -7,7 +7,7 @@ import { useTranslation } from "react-i18next";
 import { FaApple } from "react-icons/fa";
 import { FaGooglePlay } from "react-icons/fa";
 
-const HomeCard = ({titulo, texto, pl}) => {
+const HomeCard = ({titulo, titulo1, texto, pl}) => {
   const { t } = useTranslation();
 
     return(
@@ -16,7 +16,10 @@ const HomeCard = ({titulo, texto, pl}) => {
         <div className="overlay" />
         <section className="container">
           <div className="text-container">
-            <h1 className="titulo">{titulo}</h1>
+            <div className="title-container">
+              <h2 className="titulo">{titulo1}</h2>
+              <h1 className="titulo">{titulo}</h1>
+            </div>
             <h3 className="subtitulo">{texto}</h3>
             <div className="textoplataformas"> <h5>{pl}</h5> </div>
             <span className="botoesPlataformas">

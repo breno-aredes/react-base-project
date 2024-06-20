@@ -48,11 +48,19 @@ const Home = () => {
   return (
     <Base>
       <HomeCard
-      titulo={t('Baixe o App Passeio Carioca !')}
-      texto={t('O melhor app de passeios do Rio de Janeiro!')}
+      titulo1={t('Descubra o App')}
+      titulo={t('Passeio Carioca')}
+      texto={t('Conheça um lado do Rio de Janeiro que você nunca viu!')}
       pl={t('Plataformas Disponíveis')}/>
 
-      <h2 className="texto-destaque">{t('Conheça a Passeio Carioca')}</h2>
+      <div className="apresentacao">
+        <h2 className="texto-destaque">{t('Conheça a Passeio Carioca')}</h2>
+        <hr class="linha-divisoria" />
+        <p>O Passeio Carioca é o seu passaporte para explorar o Rio de Janeiro, combinando história, cultura e diversão em uma única experiência. Navegue por histórias fascinantes, participe de jogos interativos e conecte-se com guias locais.</p>
+        <p>Descubra abaixo os principais diferenciais do nosso aplicativo.</p>
+      </div>
+
+      
 
       <SectionGameficacao />
       <SectionMapa />
