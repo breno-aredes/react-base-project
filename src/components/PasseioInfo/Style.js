@@ -34,10 +34,11 @@ const PasseioInfoStyle = styled.article`
     }
 
     .btn_voltar{
-        align-self: center;
-        padding: 10px 30px;
-        background-color: var(--background);
-        border-radius: 10px;
+      align-self: center;
+      padding: 10px 30px;
+      background-color: var(--background);
+      border-radius: 10px;
+      cursor: pointer;
     }
 
   img {
