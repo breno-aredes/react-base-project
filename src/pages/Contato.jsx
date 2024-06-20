@@ -14,7 +14,7 @@ const Contato = () => {
                 <p>{t('Temos um compromisso em oferecer o melhor atendimento e garantir que sua experiência explorando o Rio de Janeiro seja inesquecível. Se você tem dúvidas, sugestões ou precisa de mais informações, não hesite em nos contactar. Nossa equipe está pronta para ajudá-lo a descobrir todas as maravilhas que o Rio tem a oferecer.')}</p>
             </div>
             <div className="botoes">
-                <Botao texto={t("Entre em contato")} isWhatsApp={true} numeroCelular={dadosComuns.whatsapp} mensagem={dadosComuns.mnsgs_padrao_whatsapp.geral}></Botao>
+                <Botao texto={t("Entre em contato")} isWhatsApp={true} numeroCelular={dadosComuns.whatsapp} mensagem={dadosComuns.mnsgs_padrao_whatsapp.geral} isFinal={true}></Botao>
             </div>
         </Base>
     

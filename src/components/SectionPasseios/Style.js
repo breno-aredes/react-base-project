@@ -10,7 +10,7 @@ const Section = styled.div`
         justify-content: center;
         align-items: center;
         background-color: var(--background);
-        padding: 2rem 0;
+        padding: 2rem 0 0 0;
         .text{
             display: flex;
             flex-direction: column;
@@ -37,7 +37,7 @@ const Section = styled.div`
         .section-text {
             color: var(--text);
             text-align: center;
-            margin-bottom: 2rem;
+            /* margin-bottom: 2rem; */
         }
         .swiperPasseios {
             width: 75%;
