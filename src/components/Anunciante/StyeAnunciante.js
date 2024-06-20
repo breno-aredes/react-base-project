@@ -111,13 +111,12 @@ const StyleAnun = styled.article`
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 10px;
-        margin: 2rem 0 0 0;
-
+        /* margin: 10px; */
+        /* margin: 2rem 0 0 0; */
     }
 
     .Textinho {
-        margin-top: 30px;
+        /* margin-top: 30px; */
         font-size: 20px;
         display: flex;
         justify-content: center;
@@ -125,7 +124,7 @@ const StyleAnun = styled.article`
     }
 
     .botao {
-        padding: 2rem;
+        /* padding: 2rem; */
     }
         
     .BlocoImg {

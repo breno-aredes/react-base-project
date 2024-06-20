@@ -1,10 +1,17 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 const CenteredContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   height: 15vh; /* Defina a altura desejada para centralizar verticalmente */
+  // Novo prop. Quando isFinal for true, adicione margem.
+  // Isso é para os botões no final da página.
+  ${({ isFinal }) =>
+    isFinal &&
+    css`
+      margin: 2rem !important;
+    `}
 `;
 
 const BaixeButton = styled.button`
@@ -24,8 +31,8 @@ const BaixeButton = styled.button`
     }
 `;
 
-const CenteredButton = ({ children }) => (
-  <CenteredContainer>
+const CenteredButton = ({ children, isFinal }) => (
+  <CenteredContainer isFinal={ isFinal }>
     <BaixeButton>{ children }</BaixeButton>
   </CenteredContainer>
 );

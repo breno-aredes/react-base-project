@@ -60,10 +60,10 @@ const Anuncie = () => {
                 </section>
 
                 <div className="botao">
-                        <p1 className="Textinho">{t("Consulte valores e tire duvidas")}</p1>
+                        <p1 className="Textinho">{t("Consulte valores e tire suas dúvidas")}</p1>
 
                         <Link smooth to="/Form_Anunciante#title_header">
-                            <Botao className="BotaoAnun" texto={t("Entre em contato")} />
+                                <Botao className="BotaoAnun" texto={t("Entre em contato")} isFinal={true}/>
                         </Link>
                         
                 </div>
