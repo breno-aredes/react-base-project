@@ -20,6 +20,7 @@ const Subir = styled.header`
         align-content: center;
         display: flex;
         justify-content: center;
+        cursor: pointer;
 
     }
 

@@ -49,7 +49,6 @@ const Section = styled.div`
             margin: 0;
             .swiper-button-next, .swiper-button-prev{
             color: var(--secundaria);
-            background-color: var(--cinzaclaro);
             z-index: 999;
             position: absolute;
             top: 50%;

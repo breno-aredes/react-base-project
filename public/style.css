@@ -85,7 +85,8 @@ h1,h2,h3,h4,h5,h6,p{
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  white-space: nowrap;
+  white-space: wrap;
+  width: 100%;
   color: var(--texto);
   text-align: center;
   margin-top: 0;

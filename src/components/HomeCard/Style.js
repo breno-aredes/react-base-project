@@ -13,7 +13,7 @@ const HomePageHead = styled.div`
   padding: 1rem;
   z-index: -1;
   top: -15rem;
-  height: 45rem;
+  height: 47rem;
 
 
   .overlay {
@@ -59,6 +59,7 @@ const HomePageHead = styled.div`
   .subtitulo {
     text-align: center;
     color: white;
+    max-width: 400px;
     font-family: var(--title-font);
     font-weight: normal;
     /* margin: 1rem; */

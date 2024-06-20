@@ -56,8 +56,8 @@ const Home = () => {
       <div className="apresentacao">
         <h2 className="texto-destaque">{t('Conheça a Passeio Carioca')}</h2>
         <hr class="linha-divisoria" />
-        <p>O Passeio Carioca é o seu passaporte para explorar o Rio de Janeiro, combinando história, cultura e diversão em uma única experiência. Navegue por histórias fascinantes, participe de jogos interativos e conecte-se com guias locais.</p>
-        <p>Descubra abaixo os principais diferenciais do nosso aplicativo.</p>
+        <p>{t("O Passeio Carioca é o seu passaporte para explorar o Rio de Janeiro, combinando história, cultura e diversão em uma única experiência. Navegue por histórias fascinantes, participe de jogos interativos e conecte-se com guias locais.")}</p>
+        <p>{t("Descubra abaixo os principais diferenciais do nosso aplicativo.")}</p>
       </div>
 
       
