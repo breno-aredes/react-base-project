@@ -4,6 +4,7 @@ import HomeCard from "../components/HomeCard/HomeCard";
 import SectionPasseios from "../components/SectionPasseios/SectionPasseios";
 import SectionGameficacao from "../components/SectionGameficacao/SectionGameficacao";
 import SectionMapa from "../components/SectionMapa/SectionMapa";
+import BotaoSubir from "../components/BotaoSubir/BotaoSubir";
 
 import { register } from 'swiper/element/bundle'
 
@@ -97,10 +98,10 @@ const Home = () => {
       imagem="imagens/FotoMapaApp-PasseioCarioca.png"
       align="right"
       link={"/mapa"}/>*/}
-
-      <div className="botoes" onClick={()=> setButtonPopup(true)}><Botao texto={t("Baixe o app")}/></div>
-        <Popup trigger={buttonPopup} position="center" modal setTrigger={setButtonPopup}>
-        </Popup>
+        <div className="botoes" onClick={()=> setButtonPopup(true)}><Botao texto={t("Baixe o app")}/></div>
+          <Popup trigger={buttonPopup} position="center" modal setTrigger={setButtonPopup}>
+          </Popup>
+        <BotaoSubir></BotaoSubir>
     </Base>
   )
 }
