@@ -27,7 +27,6 @@ const Rodape = function(){
                             <Link smooth to="/#gameficacao" scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}>{t('Gameficação')}</Link>
                             <Link smooth to="/#mapa" scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}>{t('Mapa')}</Link>
                             <Link to="/about#title_header">{t('Sobre Nós')}</Link>
-                            <Link to="/passeios#title_header">{t('Passeios Antigos')}</Link>
                         </div>
                     </div>
                     <div className="contatos">
