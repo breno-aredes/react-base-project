@@ -15,6 +15,7 @@
         "Explore a cidade com nossos passeios guiados personalizados. Nossos guias turísticos experientes o levarão a uma jornada única, compartilhando histórias fascinantes e segredos bem guardados dos pontos turísticos do Rio de Janeiro. Além disso, você terá a oportunidade de descobrir um rio que você nunca viu antes. Nossos passeios não apenas mostram a beleza natural da região, mas também mergulham na cultura e na história local, proporcionando uma experiência inesquecível.": "Explore the city with our personalized guided tours. Our experienced tour guides will take you on a unique journey, sharing fascinating stories and well-kept secrets of Rio de Janeiro's sights. In addition, you will have the opportunity to discover a river you have never seen before. Our tours not only show the natural beauty of the region, but also delve into the local culture and history, providing an unforgettable experience.",
         "Baixe agora e comece a sua jornada de turismo com uma dose extra de diversão e recompensas!" : "Download now and start your tourism journey with an extra dose of fun and rewards!",
         "Passeios" : "Tours",
+        "Passeio": "Tour",
         "Saiba Mais" : "Learn More",
         "Mapa" : "Map",
         "Explore o Rio de Janeiro com ele na palma da sua mão" : "Explore Rio de Janeiro with it in the palm of your hand",
@@ -112,6 +113,12 @@
         "Sócio Fundador": "Founding Partner",
         "Ciência de Dados": "Data Science",
         "Eng. de Software": "Software Eng.",
-        "Professor IBMEC": "IBMEC Professor"
+        "Professor IBMEC": "IBMEC Professor",
+        "Local": "Location",
+        "Dia": "Day",
+        "Hora": "Time",
+        "Guia": "Guide",
+        "Preço": "Price",
+        "Voltar": "Back"
     }
 }

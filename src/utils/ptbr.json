@@ -15,6 +15,7 @@
         "Explore a cidade com nossos passeios guiados personalizados. Nossos guias turísticos experientes o levarão a uma jornada única, compartilhando histórias fascinantes e segredos bem guardados dos pontos turísticos do Rio de Janeiro. Além disso, você terá a oportunidade de descobrir um rio que você nunca viu antes. Nossos passeios não apenas mostram a beleza natural da região, mas também mergulham na cultura e na história local, proporcionando uma experiência inesquecível.": "Explore a cidade com nossos passeios guiados personalizados. Nossos guias turísticos experientes o levarão a uma jornada única, compartilhando histórias fascinantes e segredos bem guardados dos pontos turísticos do Rio de Janeiro. Além disso, você terá a oportunidade de descobrir um rio que você nunca viu antes. Nossos passeios não apenas mostram a beleza natural da região, mas também mergulham na cultura e na história local, proporcionando uma experiência inesquecível.",
         "Baixe agora e comece a sua jornada de turismo com uma dose extra de diversão e recompensas!" : "Baixe agora e comece a sua jornada de turismo com uma dose extra de diversão e recompensas!",
         "Passeios" : "Passeios",
+        "Passeio": "Passeio",
         "Saiba Mais" : "Saiba Mais",
         "Mapa" : "Mapa",
         "Explore o Rio de Janeiro com ele na palma da sua mão" : "Explore o Rio de Janeiro com ele na palma da sua mão",
@@ -112,6 +113,12 @@
         "Sócio Fundador": "Sócio Fundador",
         "Ciência de Dados": "Ciência de Dados",
         "Eng. de Software": "Eng. de Software",
-        "Professor IBMEC": "Professor IBMEC"
+        "Professor IBMEC": "Professor IBMEC",
+        "Local": "Local",
+        "Dia": "Dia",
+        "Hora": "Hora",
+        "Guia": "Guia",
+        "Preço": "Preço",
+        "Voltar": "Voltar"
     }
 }
