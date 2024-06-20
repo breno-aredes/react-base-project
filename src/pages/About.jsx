@@ -9,24 +9,27 @@ import Popup from "../components/Popup/Popup";
 import { useState } from 'react';
 
 const About = () => {
+
+    const { t } = useTranslation();
+
     const membros = [
-        { nome: 'Renato Bellini', imagem: 'imagens/perfil/renato-passeiocarioca.jpg', descricao: 'Sócio Fundador' },
-        { nome: 'Rafael Bokor', imagem: 'imagens/perfil/rafael-passeiocarioca.jpeg', descricao: 'Sócio Fundador' },
+        { nome: 'Renato Bellini', imagem: 'imagens/perfil/renato-passeiocarioca.jpg', descricao: t('Sócio Fundador') },
+        { nome: 'Rafael Bokor', imagem: 'imagens/perfil/rafael-passeiocarioca.jpeg', descricao: t('Sócio Fundador') },
     ];
     
     const desenvolvedores = [
         { nome: 'Caio', imagem: 'imagens/perfil/caio.jpg', descricao: 'A.D.S' },
-        { nome: 'Ewerton', imagem: 'imagens/perfil/ewerton.jpg', descricao: 'Ciência de Dados' },
-        { nome: 'João Gabriel', imagem: 'imagens/perfil/joao.jpg', descricao: 'Ciência de Dados' },
-        { nome: 'Miguel', imagem: 'imagens/perfil/miguel.jpg', descricao: 'Ciência de Dados' },
-        { nome: 'Paula', imagem: 'imagens/perfil/paula.jpg', descricao: 'Eng. de Software' },
+        { nome: 'Ewerton', imagem: 'imagens/perfil/ewerton.jpg', descricao: t('Ciência de Dados') },
+        { nome: 'João Gabriel', imagem: 'imagens/perfil/joao.jpg', descricao: t('Ciência de Dados') },
+        { nome: 'Miguel', imagem: 'imagens/perfil/miguel.jpg', descricao: t('Ciência de Dados') },
+        { nome: 'Paula', imagem: 'imagens/perfil/paula.jpg', descricao: t('Eng. de Software') },
       ];
 
     const professores = [
-        { nome: 'Eduardo Mangeli ', imagem: 'imagens/perfil/eduardomangeli.jpg', descricao: 'Professor IBMEC'},
+        { nome: 'Eduardo Mangeli ', imagem: 'imagens/perfil/eduardomangeli.jpg', descricao: t('Professor IBMEC')},
     ];
 
-    const { t } = useTranslation();
+    // const { t } = useTranslation();
 
     const[buttonPopup, setButtonPopup] = useState(false);
 
@@ -106,7 +109,7 @@ const About = () => {
                                     ))}
                                 </ul>
 
-                                <h3 className="SubTitle">{t('Empresa deselvolvedora do Aplicativo')}</h3>
+                                <h3 className="SubTitle">{t('Empresa Desenvolvedora do Aplicativo')}</h3>
 
                                 <ul className="Conteudo-Equipe-Escrito-Empresa">
                                     <li>Keener Innovations</li>

@@ -64,7 +64,7 @@ const Local = styled.h4`
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 100%;
+    /* width: 100%; */
     margin: 0 auto;
     font-size: 1.2rem;
     background-color: var(--destaque);

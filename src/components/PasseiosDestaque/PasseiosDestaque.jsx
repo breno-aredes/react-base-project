@@ -1,10 +1,12 @@
 import { PasseioDestaque, CardPasseio, Titulo, Local, Descricao } from "./Style"
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { useNavigate, Link } from "react-router-dom";
 
 const PasseiosDestaque= (props) => {
 
-  const navigate = useNavigate();
+  const { t } = useTranslation();
+
   const [ShowText, setShowText]= useState(false)
 
  /* const handleClick = () => {
