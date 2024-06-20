@@ -38,4 +38,4 @@ Utilize o comando `npm run build` para construir uma versão pronta para produç
 
 ## Apresentação Slides AP2
 
-https://www.canva.com/design/DAGBSmj8Mco/QBsSIsjN89WfdV2ji1I4yA/edit?utm_content=DAGBSmj8Mco&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+https://www.canva.com/design/DAGIrUcX7Zg/fpIlriNLv51kwCowJmmuMg/view?utm_content=DAGIrUcX7Zg&utm_campaign=designshare&utm_medium=link&utm_source=editor
