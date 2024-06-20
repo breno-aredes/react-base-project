@@ -18,12 +18,7 @@ const PasseioTour = () => {
     return (
         <Base>
             <Banner titulo={t("Passeio")} imagem={""}/>
-            <Botao texto={t("Baixe o app")} />
             <div className="body">
-                <h1>{t('nome')}</h1> 
-                <h2>{passeioId}</h2>
-                <p>{t('descrição')}</p>
-
 
                 <PasseioInfo
                    
@@ -35,6 +30,7 @@ const PasseioTour = () => {
                     hora={passeiodado[0].hora}
                     valor={passeiodado[0].valor}
                     passeioId={passeiodado[0].passeioId}
+                    descricao={passeiodado[0].descricao}
                 />
                 
                 </div>

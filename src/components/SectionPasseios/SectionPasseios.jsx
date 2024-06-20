@@ -23,6 +23,7 @@ const SectionPasseios = () => {
       }
   }
 
+
   handleResize();
   window.addEventListener('resize', handleResize);
   }, [])
@@ -46,9 +47,11 @@ const SectionPasseios = () => {
                         (e) => (
                             <SwiperSlide key={e.id}> 
                             <PasseiosDestaque 
+                            
                                 imagem={e.imagem}
                                 titulo={e.nome}
                                 local={e.local}
+                                passeioId={e.passeioId}
                                 descricao={t(e.descricao)}
                             />
                             </SwiperSlide>
