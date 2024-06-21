@@ -9,22 +9,29 @@ import Popup from "../components/Popup/Popup";
 import { useState } from 'react';
 
 const About = () => {
+
+    const { t } = useTranslation();
+
     const membros = [
-        { nome: 'Renato Bellini', imagem: 'imagens/perfil/linkedin-sales-solutions-pAtA8xe_iVM-unsplash.jpg', descricao: 'Sócio Fundador' },
-        { nome: 'Rafael Bokor', imagem: 'imagens/perfil/willian-souza-p5BoBF0XJUA-unsplash.jpg', descricao: 'Sócio Fundador' },
-      ];
+        { nome: 'Renato Bellini', imagem: 'imagens/perfil/renato-passeiocarioca.jpg', descricao: t('Sócio Fundador') },
+        { nome: 'Rafael Bokor', imagem: 'imagens/perfil/rafael-passeiocarioca.jpeg', descricao: t('Sócio Fundador') },
+    ];
     
-      const desenvolvedores = [
-        { nome: 'Caio', imagem: 'imagens/perfil/caio.jpg', descricao: 'ADS' },
-        { nome: 'Ewerton', imagem: 'imagens/perfil/ewerton.jpg', descricao: 'Ciência de Dados' },
-        { nome: 'João Gabriel', imagem: 'imagens/perfil/joao.jpg', descricao: 'Ciência de Dados' },
-        { nome: 'Miguel', imagem: 'imagens/perfil/miguel.jpg', descricao: 'Ciência de Dados' },
-        { nome: 'Paula', imagem: 'imagens/perfil/paula.jpg', descricao: 'Eng. de Software' },
+    const desenvolvedores = [
+        { nome: 'Caio', imagem: 'imagens/perfil/caio.jpg', descricao: 'A.D.S' },
+        { nome: 'Ewerton', imagem: 'imagens/perfil/ewerton.jpg', descricao: t('Ciência de Dados') },
+        { nome: 'João Gabriel', imagem: 'imagens/perfil/joao.jpg', descricao: t('Ciência de Dados') },
+        { nome: 'Miguel', imagem: 'imagens/perfil/miguel.jpg', descricao: t('Ciência de Dados') },
+        { nome: 'Paula', imagem: 'imagens/perfil/paula.jpg', descricao: t('Eng. de Software') },
       ];
 
-      const { t } = useTranslation();
+    const professores = [
+        { nome: 'Eduardo Mangeli ', imagem: 'imagens/perfil/eduardomangeli.jpg', descricao: t('Professor IBMEC')},
+    ];
 
-      const[buttonPopup, setButtonPopup] = useState(false);
+    // const { t } = useTranslation();
+
+    const[buttonPopup, setButtonPopup] = useState(false);
 
     return (
         <Base>
@@ -92,10 +99,17 @@ const About = () => {
                                 <h3 className="SubTitle">{t('Mentores')}</h3>
 
                                 <ul className="Conteudo-Equipe-Escrito-Professores">
-                                    <li>Professor Eduardo Mangeli, IBMEC</li>
+                                    {professores.map((dev, index) => (
+                                        <AboutCard 
+                                        key={index} 
+                                        nome={dev.nome} 
+                                        imagem={dev.imagem} 
+                                        descricao={dev.descricao} 
+                                        />
+                                    ))}
                                 </ul>
 
-                                <h3 className="SubTitle">{t('Empresa deselvolvedora do Aplicativo')}</h3>
+                                <h3 className="SubTitle">{t('Empresa Desenvolvedora do Aplicativo')}</h3>
 
                                 <ul className="Conteudo-Equipe-Escrito-Empresa">
                                     <li>Keener Innovations</li>

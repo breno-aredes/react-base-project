@@ -20,9 +20,9 @@ const PopUpStyle = styled.div`
         width: 50%;
         height: 300px;
         max-width: 300px;
-        background: var(--desfoco);
         border-radius: 10px;
-        border: 1px solid var(--primaria);
+        border: 2px solid var(--destaque);
+        backdrop-filter: blur(5px);
         z-index: 999;
     }
 
@@ -30,7 +30,7 @@ const PopUpStyle = styled.div`
         display: block;
         align-items: center;
         justify-content: center;
-        width: 100px;
+        width: 150px;
         height: auto;
         margin: 0 auto;
     }
@@ -63,11 +63,12 @@ const PopUpStyle = styled.div`
         flex-direction: row;
         justify-content: center;
         gap: 16px;
-        margin: 32px;
+        margin: 0 auto;
     }
 
     .botao{
         display: flex;
+        overflow: hidden;
         height: auto;
         justify-content: space-between;
         align-items: center;
@@ -90,10 +91,11 @@ const PopUpStyle = styled.div`
             width: 90%;
             max-width: 400px;
             height: auto;
+            padding: 0;
         }
 
         .logo{
-            width: 300px;
+            width: 250px;
             height: auto;
         }
         
@@ -108,6 +110,7 @@ const PopUpStyle = styled.div`
 
         .popup-text{
             font-size: 1rem;
+            margin-top: 0;
         }
     }
 `;

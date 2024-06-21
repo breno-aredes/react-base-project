@@ -15,11 +15,12 @@ const ROUTES = {
 };
 
 const Header = () => {
-  const { i18n } = useTranslation();
+  const { i18n, t } = useTranslation();
   const [currentLanguage, setCurrentLanguage] = useState('pt')
   const [menuVisible, setMenuVisible] = useState(false)
   const toggleMenu = () => setMenuVisible(!menuVisible)
   const menuRef = useRef(null);
+  const [isHovered, setIsHovered] = useState(false);
 
   const handleClickOutside = (event) => {
     if (menuRef.current && !menuRef.current.contains(event.target)) {
@@ -53,42 +54,41 @@ const Header = () => {
     <Top>
     <div id="outer-container">
       <Menu outerContainerId={ "outer-container" } right noOverlay>
-        <Link to={ROUTES.HOME}>Home</Link>
-        {/*<Link to="/passeios">Passeios</Link>
-        <Link to="/gameficacao">Gameficação</Link>
-        <Link to="/mapa">Mapa</Link>*/}
-        <Link to={ROUTES.ABOUT}>Sobre Nós</Link>
-        <Link to={ROUTES.ADVERTISE}>Anuncie</Link>
-        <Link to={ROUTES.GUIDE}>Seja um Guia</Link>  
+        <Link to={ROUTES.HOME}>{t('Home')}</Link>
+        <Link to={ROUTES.ABOUT}>{t('Sobre Nós')}</Link>
+        <Link to={ROUTES.ADVERTISE}>{t('Anuncie')}</Link>
+        <Link to={ROUTES.GUIDE}>{t('Seja um Guia')}</Link>  
       </Menu>
     </div>
     <div className="divGeral">
       <Link to={ROUTES.HOME} className="containerLogo">
         <img src="imagens/PasseioCariocaLogoBranco.svg" alt="Passeio Carioca" />
-        <h3>Passeio<br/>Carioca</h3>
+        <h3 id="title_header">Passeio<br/>Carioca</h3>
       </Link>
       <div className="links">
-        <Link to={ROUTES.HOME} className="linkpages">Home</Link>
-        {/*<Link to="/passeios">Passeios</Link>
-        <Link to="/gameficacao">Gameficação</Link>
-        <Link to="/mapa">Mapa</Link>*/}
-        <Link to={ROUTES.ABOUT}className="linkpages">Sobre Nós</Link>
-        <Link to={ROUTES.ADVERTISE} className="linkpages">Anuncie</Link>
-        <Link to={ROUTES.GUIDE} className="linkpages">Seja um Guia</Link>
+        <Link to={ROUTES.HOME} className="linkpages">{t('Home')}</Link>
+        <Link to={ROUTES.ABOUT}className="linkpages">{t('Sobre Nós')}</Link>
+        <Link to={ROUTES.ADVERTISE} className="linkpages">{t('Anuncie')}</Link>
+        <Link to={ROUTES.GUIDE} className="linkpages">{t('Seja um Guia')}</Link>
       </div>
 
-      <div ref={menuRef}>
+      <div ref={menuRef} className="trButton">
         <MenuButton id="menu-btn" type="checkbox" checked={menuVisible} onChange={toggleMenu}/>
         <MenuStyled>
-          <MenuIcon htmlFor="menu-btn">
-            <MdOutlineTranslate />
+          <MenuIcon htmlFor="menu-btn" className={isHovered ? 'hovered' : ''}>
+            <div className="trIcon">
+              <MdOutlineTranslate />
+            </div>
+            <span onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}>{getLanguageName(i18n.language)}</span>
+            {/* <span onClick={toggleMenu} className="clickable">{getLanguageName(i18n.language)}</span> */}
           </MenuIcon>
-          <span>{getLanguageName(i18n.language)}</span>
+          
         </MenuStyled>
         <MenuContent isVisible= {menuVisible}>
           <div className="botoes">
-            <button className="botaoLng" onClick={() => changeLanguage('pt')}>Português</button>
-            <button className="botaoLng" onClick={() => changeLanguage('en')}>English</button>
+            <button className="botaoLng" onClick={() => changeLanguage('pt')}>{t('Português')}</button>
+            <button className="botaoLng" onClick={() => changeLanguage('en')}>{t('English')}</button>
           </div>
         </MenuContent>
       </div>

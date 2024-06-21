@@ -2,51 +2,87 @@ import styled from "styled-components"
 
 const PasseioDestaque = styled.header`
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 300px;
-  width: 100%;
+  justify-content: space-between;
+  height: fit-content;
+  gap: 5px;
+  width: fit-content;
   margin: 4px;
+  .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    gap: 0;
+  }
 `;
 
 const CardPasseio = styled.div`
-  display: flex;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
   height: 300px;
-  width: 99%;
+  width: 100%;
   img {
     object-fit: cover;
     height: 100%;
     width: 100%;
+    border-radius: 10px;
+    box-shadow: 2px 11px 26px -17px rgba(0,0,0,0.75);
   }
 `;
 
-const Titulo = styled.div`
-    display : ${props => props.mostrar? 'block' : 'none'};
-    color: var(--secundaria);
+const Titulo = styled.h3`
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    color: var(--primaria);
+    font-size: 1.5rem;
     position: absolute;
     text-align: center;
-    top: 17px;
+    top: 25px;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: var(--destaque);
-    width: 98%;
-    padding: 10px;
-    border-radius: 0 0 30px 30px
+    width: 100%;
+    height: fit-content;
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+    border-radius: 0 0 30px 30px;
 `;
 
-const ProxSaida = styled.div`
-    display : ${props => props.mostrar? 'block' : 'none'};
-    color: var(--secundaria);
-    position: absolute;
+const Local = styled.h4`
+    display : flex;
+    color: var(--texto);
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    bottom: -26px;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    /* width: 100%; */
+    margin: 0 auto;
+    font-size: 1.2rem;
     background-color: var(--destaque);
-    width: 98%;
     padding: 10px;
-    border-radius: 30px 30px 0 0
 `;
 
-export { PasseioDestaque, CardPasseio, Titulo, ProxSaida };
+const Descricao = styled.p`
+    display : flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: var(--texto);
+    z-index: 999;
+    text-align: center;
+    background: none;
+    width: 75%;
+    height: fit-content;
+    padding: 0;
+    margin: 0 auto;
+`;
+
+export { PasseioDestaque, CardPasseio, Titulo, Local, Descricao };

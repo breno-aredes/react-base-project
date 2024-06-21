@@ -31,6 +31,12 @@ const Top = styled.header`
   font-style: normal;
   }
 
+  .clickable{
+    cursor: pointer;
+  }
+
+
+
   .links{
     display: none;
     flex-direction: row;
@@ -86,6 +92,11 @@ const Top = styled.header`
   }
 
   @media screen and (min-width: 1024px){
+    .trButton{
+      /* padding: 0 28px; */
+      margin: 0 28px;
+    }
+
     padding: 3.5em 0em;
     height: 10vh;
     /* position: absolute; */
@@ -121,6 +132,7 @@ const Top = styled.header`
   }
 `;
 
+
 const MenuButton = styled.input`
   display: none;
 `;
@@ -137,13 +149,23 @@ const MenuIcon = styled.label`
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: .5rem;
-  border: 2px solid var(--destaque);
-  border-radius: 5px;
-  background-color: none;
-  &:hover {
+  .trIcon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: .5rem;
+    background-color: none;
+    border: 2px solid var(--destaque);
+    border-radius: 5px;
+    margin-right: 0.5rem;
+    &:hover {
+      border: 2px solid var(--secundaria);
+    }
+  }
+  &.hovered .trIcon {
     border: 2px solid var(--secundaria);
   }
+  
   cursor: pointer;
   color: var(--destaque);
 `;
@@ -162,8 +184,8 @@ const MenuContent = styled.div`
     height: fit-content;
     gap: 1em;
     padding: 1em;
-    background-color: var(--vidro);
-    border: 2px solid var(--destaque);
+    background-color: var(--destaque);
+    border: 2px solid var(--vidro);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
   }
@@ -174,10 +196,10 @@ const MenuContent = styled.div`
     padding-inline: 2em;
     background: none;
     font-family: 'Roboto', sans-serif;
-    color: var(--secundaria);
+    color: var(--texto);
     background: none;
     &:hover{
-      color: var(--primaria);
+      color: var(--secundaria);
       cursor: pointer;
     }
   }

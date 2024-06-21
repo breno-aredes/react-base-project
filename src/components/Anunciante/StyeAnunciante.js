@@ -10,20 +10,24 @@ const StyleAnun = styled.article`
         font-family: 'Roboto', serif;
     }
 
-    .Conteudo {
-        width: 100%;
+    .conteudo-anuncie {
         display: flex;
         flex-direction: column;
         font-size: 100%;
         margin-bottom: 48px;
-        margin-right: 40em;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        width: 75vw; 
+        margin: 0 auto; 
+
     }
 
     .Conteudo-Atrativo {
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: left;
+        justify-content: center;
         margin: 6em;
         margin-top: 60px;
         margin-bottom: 20px;
@@ -33,6 +37,7 @@ const StyleAnun = styled.article`
         display: flex;
         flex-direction: column;
         gap: 32px;
+        align-items: center;
     }
 
     .Conteudo-Atrativo-Escrito-Title {
@@ -50,8 +55,8 @@ const StyleAnun = styled.article`
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
-        gap: 100px;
-        margin: 6em;
+        gap: 20px;
+        margin: 2em;
         margin-top: 60px;
         margin-bottom: 28px;
     }
@@ -64,6 +69,39 @@ const StyleAnun = styled.article`
         gap: 32px;
     }
 
+    span{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .title{
+        width: fit-content;
+        padding: 10px;
+        border-radius: 20px;
+        border: 1px solid var(--cinza);
+    }
+
+    #title-bronze {
+        font-weight: 600;
+        color: var(--bronze);
+    }
+
+    #title-prata {
+        font-weight: 600;
+        color: var(--prata);
+    }
+
+    #title-ouro {
+        font-weight: 600;
+        color: var(--ouro);
+    }
+
+    #title-diamante {
+        font-weight: 600;
+        color: var(--diamante);
+    }
+
     .Title_Anunciante {
         font-weight: 400;
         font-size: 24px;
@@ -73,12 +111,20 @@ const StyleAnun = styled.article`
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 10px;
+        /* margin: 10px; */
+        /* margin: 2rem 0 0 0; */
     }
 
     .Textinho {
-        margin-top: 30px;
+        /* margin-top: 30px; */
         font-size: 20px;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .botao {
+        /* padding: 2rem; */
     }
         
     .BlocoImg {
@@ -91,9 +137,7 @@ const StyleAnun = styled.article`
     .Imagem {
         display: none;
         height: auto;
-        width: 700px;
-        margin-bottom: 100px; 
-        border-radius: 20px;
+        width: 500px;
     }
 
     @media screen and (min-width: 1024px){

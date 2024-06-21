@@ -1,13 +1,20 @@
 import { Bottom } from "./Style";
-import { Link } from "react-router-dom";
 import { RiInstagramLine } from "react-icons/ri";
 import { FaWhatsapp , FaFacebook } from "react-icons/fa";
+import { criarWhatsAppLink } from "../../utils/utils.js";
+import dadosComuns from '../../utils/dados_comuns.json';
+import { HashLink as Link } from "react-router-hash-link";
+
+import { useTranslation } from "react-i18next";
+
 
 const Rodape = function(){
+    const { t } = useTranslation();
+
     return (
         <Bottom>
             <div className="colunaNav">
-                    <Link to="/" className="containerLogo">
+                    <Link smooth to="/#title_header" scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })} className="containerLogo">
                         <img src="imagens/PasseioCariocaLogoBranco.svg" alt="Passeio Carioca" />
                         <h3 className="nomeEmpresa">Passeio<br/>Carioca</h3>
                     </Link>  
@@ -15,33 +22,33 @@ const Rodape = function(){
                     <div className="explore">                        
                         <div className="linksColumn">
                             <h3>Explore</h3>
-                            <Link to="/">Home</Link>
-                            <Link to="/passeios">Passeios</Link>
-                            <Link to="/gameficacao">Gameficação</Link>
-                            <Link to="/mapa">Mapa</Link>
-                            <Link to="/about">Sobre Nós</Link>
+                            <Link smooth to="/#title_header" scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}>Home</Link>
+                            <Link smooth to="/#passeio" scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}>{t('Passeios')}</Link>
+                            <Link smooth to="/#gameficacao" scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}>{t('Gameficação')}</Link>
+                            <Link smooth to="/#mapa" scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}>{t('Mapa')}</Link>
+                            <Link to="/about#title_header">{t('Sobre Nós')}</Link>
                         </div>
                     </div>
                     <div className="contatos">
                         <div className="linksColumn">
-                            <h3>Contatos</h3>
-                            <Link to="/anuncie">Anuncie</Link>
-                            <Link to="/guia">Seja um Guia</Link>
-                            <Link to="/contato">Fale conosco</Link>
+                            <h3>{t('Contatos')}</h3>
+                            <Link to="/anuncie#title_header">{t('Anuncie')}</Link>
+                            <Link to="/guia#title_header">{t('Seja um Guia')}</Link>
+                            <Link to="/contato#title_header">{t('Fale conosco')}</Link>
                         </div>
                     </div>
                     <div className="redes">
                         <div className="linksColumn">
-                            <h3>Nossas Redes</h3>
-                            <a className="sociais" href="https://www.instagram.com/riocasaseprediosantigos/" target="_blank" rel="noopener noreferrer">
+                            <h3>{t('Nossas Redes')}</h3>
+                            <a className="sociais" href={dadosComuns.redes_sociais.instagram} target="_blank" rel="noopener noreferrer">
                                 <RiInstagramLine size={25} className="socialicons"/>
                                 <span className="link-text">Instagram</span>
                             </a>
-                            <a className="sociais" href="https://www.facebook.com/riocasaseprediosantigos/" target="_blank" rel="noopener noreferrer">
+                            <a className="sociais" href={dadosComuns.redes_sociais.facebook} target="_blank" rel="noopener noreferrer">
                                 <FaFacebook size={25} className="socialicons"/>
                                 <span className="link-text">Facebook</span>
                             </a>
-                            <a className="sociais" href="https://wa.me/+5521999929790" target="_blank" rel="noopener noreferrer">
+                            <a className="sociais" href={criarWhatsAppLink(dadosComuns.whatsapp, dadosComuns.mnsgs_padrao_whatsapp.geral)} target="_blank" rel="noopener noreferrer">
                                 <FaWhatsapp size={25} className="socialicons"/>
                                 <span className="link-text">Whatsapp</span>
                             </a>
@@ -50,17 +57,14 @@ const Rodape = function(){
                     </div>
                         <hr className="divider" />
                         <div className="footerEnd">
-                            <Link to="/"><small>© {new Date().getFullYear()} Passeio Carioca</small></Link>
+                            <Link to="/#title_header"><small>© {new Date().getFullYear()} Passeio Carioca</small></Link>
                             <div className="bottomLinks">
-                                <Link to="/termos"><small>Termos de Uso</small></Link>
-                                <Link to="/privacidade"><small>Política de Privacidade</small></Link>
+                                <Link to="/termos#title_header"><small>{t('Termos de Uso')}</small></Link>
+                                <Link to="/privacidade#title_header"><small>{t('Política de Privacidade')}</small></Link>
                             </div>
                             
                         </div>
             </div>
-
-        
-
         </Bottom>
     )
 }
