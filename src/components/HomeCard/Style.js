@@ -1,12 +1,8 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const HomePageHead = styled.div`
-  background:
-        linear-gradient(
-          rgba(0, 0, 0, 0.1), 
-          rgba(0, 0, 0, 0.8)
-        ),
-        url(imagens/passeios/mar3.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)),
+    url(imagens/passeios/mar3.jpg);
   background-size: cover;
   background-position: center;
   background-color: rgba(0, 0, 0, 0.7); /* black transparent overlay */
@@ -14,7 +10,6 @@ const HomePageHead = styled.div`
   z-index: -1;
   top: -15rem;
   height: 47rem;
-
 
   .overlay {
     position: relative;
@@ -38,19 +33,19 @@ const HomePageHead = styled.div`
     padding-right: 0;
   }
 
-  h1{
+  h1 {
     text-align: left;
     padding: 0;
   }
 
-  h2{
+  h2 {
     text-align: left;
     padding: 0;
     font-size: 2.5em;
     font-weight: normal;
   }
 
-  .title-container{
+  .title-container {
     align-items: flex-start;
     display: flex;
     flex-direction: column;
@@ -64,21 +59,19 @@ const HomePageHead = styled.div`
     font-weight: normal;
     /* margin: 1rem; */
   }
-  
-  .titulo{
+
+  .titulo {
     color: #ffffff;
     font-family: var(--body-font);
     font-size: 3.5em;
     text-align: left;
-    
   }
 
   .img-container {
     display: none;
-  
   }
 
-  .textoplataformas{
+  .textoplataformas {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -89,61 +82,59 @@ const HomePageHead = styled.div`
     padding: 0.5rem;
     width: fit-content;
     margin: 2rem auto;
-    h5{
+    h5 {
       padding: 0;
     }
   }
 
-  .botoesPlataformas{
+  .botoesPlataformas {
     color: var(--texto);
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: center;
     gap: 16px;
-    margin: 32px;
+    margin: 32px 0px;
   }
 
-  .botao{
+  .botao {
     display: flex;
     height: auto;
     justify-content: space-between;
     align-items: center;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     background-color: transparent;
     color: var(--destaque);
-    border: 2px solid var(--destaque);;
+    border: 2px solid var(--destaque);
     padding: 0.5rem;
     font-size: 0.8rem;
     border-radius: 5px;
     cursor: pointer;
     transition: 0.2s;
-    &:hover{
-        transform: scale(1.05);
+    &:hover {
+      transform: scale(1.05);
     }
   }
 
-  @media screen and (max-width: 1024px){
-    .textoplataformas{
-      margin:auto;
+  @media screen and (max-width: 1024px) {
+    .textoplataformas {
+      margin: auto;
     }
 
-    h2{
-    text-align: center;
+    h2 {
+      text-align: center;
+    }
+
+    .title-container {
+      align-items: center;
+    }
   }
 
-  .title-container{
-    align-items: center;
-  }
-
-  }
-
-  @media screen and (min-width: 1024px){
+  @media screen and (min-width: 1024px) {
     height: 40rem;
     .titulo {
       padding-left: 0;
       padding-right: 0;
-
     }
     .img-container {
       display: flex;
@@ -153,13 +144,13 @@ const HomePageHead = styled.div`
       position: relative;
       top: 9rem;
     }
-    .container{
+    .container {
       display: flex;
       justify-content: center;
       align-items: center;
       margin-left: 6rem;
     }
-    .text-container{
+    .text-container {
       text-align: justify;
       flex-wrap: nowrap;
       top: 9rem;
