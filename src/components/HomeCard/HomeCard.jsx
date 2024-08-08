@@ -32,7 +32,7 @@ const HomeCard = ({ titulo, titulo1, texto, pl }) => {
               rel="noopener noreferrer"
             >
               <button className="botao">
-                <FaApple size={25} /> Em breve na App Store
+                <FaApple size={25} /> {t("Em breve na App Store")}
               </button>
             </a>
             <a
@@ -41,7 +41,7 @@ const HomeCard = ({ titulo, titulo1, texto, pl }) => {
               rel="noopener noreferrer"
             >
               <button className="botao">
-                <FaGooglePlay size={25} /> Em breve na Google Play
+                <FaGooglePlay size={25} /> {t("Em breve na Google Play")}
               </button>
             </a>
           </span>

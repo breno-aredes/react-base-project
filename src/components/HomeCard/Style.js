@@ -111,6 +111,7 @@ const HomePageHead = styled.div`
     border-radius: 5px;
     cursor: pointer;
     transition: 0.2s;
+    gap: 5px;
     &:hover {
       transform: scale(1.05);
     }

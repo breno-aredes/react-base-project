@@ -59,7 +59,7 @@ const Home = () => {
       />
 
       <div className="apresentacao">
-        <h2 className="texto-destaque">{t("Conheça a Passeio Carioca")}</h2>
+        <h2 className="texto-destaque">{t("Conheça o Passeio Carioca")}</h2>
         <hr class="linha-divisoria" />
         <p>
           {t(
